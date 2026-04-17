@@ -1,0 +1,61 @@
+---
+title: Py5
+date: 2026-04-17
+author: Your Name
+cell_count: 3
+score: 0
+---
+
+```python
+list_literal = [1, 2, 3]
+tuple_literal = (4, 5, 6)
+set_literal = {7, 8, 9}
+dict_literal = {"a": 1, "b": 2}
+
+print(list_literal)   # Output: [1, 2, 3]
+print(tuple_literal)  # Output: (4, 5, 6)
+print(set_literal)    # Output: {7, 8, 9}
+print(dict_literal)   # Output: {'a': 1, 'b': 2}
+```
+
+    [1, 2, 3]
+    (4, 5, 6)
+    {8, 9, 7}
+    {'a': 1, 'b': 2}
+    
+
+
+```python
+binary = 0b1010
+octal = 0o14
+hexadecimal = 0xC
+
+print(binary)       # Output: 10
+print(octal)        # Output: 10
+print(hexadecimal)  # Output: 10
+```
+
+    10
+    12
+    12
+    
+
+
+```python
+x = 10
+y = 7
+
+sum_result = x + y
+product_result = x * y
+
+print(sum_result)      # Output: 8
+print(product_result)  # Output: 15
+```
+
+    17
+    70
+    
+
+
+---
+**Score: 0**
