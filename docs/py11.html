@@ -48,65 +48,57 @@
         title="Permalink to Py11">Py11</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">3</span>
+    <div class="highlight"><pre><span></span><code><span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Addition → 13</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Subtraction → 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Multiplication → 30</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Division → 3.333...</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">//</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Floor Division → 3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">%</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Modulus → 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">**</span> <span class="n">b</span><span class="p">)</span>  <span class="c1"># Exponentiation → 1000</span>
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">count</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+        <span class="k">break</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">13</span>
-<span class="mf">7</span>
-<span class="mf">30</span>
-<span class="mf">3.3333333333333335</span>
-<span class="mf">3</span>
+<div class="highlight"><pre><span></span><code><span class="mf">0</span>
 <span class="mf">1</span>
-<span class="mf">1000</span>
+<span class="mf">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">x</span> <span class="o">+=</span> <span class="mi">5</span>   <span class="c1"># x = x + 5</span>
-<span class="n">x</span> <span class="o">-=</span> <span class="mi">2</span>   <span class="c1"># x = x - 2</span>
-<span class="n">x</span> <span class="o">*=</span> <span class="mi">3</span>   <span class="c1"># x = x * 3</span>
-<span class="n">x</span> <span class="o">/=</span> <span class="mi">2</span>   <span class="c1"># x = x / 2</span>
+<div class="highlight"><pre><span></span><code><span class="n">num</span> <span class="o">=</span> <span class="mi">0</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Output: 19.5</span>
+<span class="k">while</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">19.5</span>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">3</span>
+<span class="mf">4</span>
+<span class="mf">5</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">10</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Equal to → False</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">!=</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Not equal → True</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;</span> <span class="n">b</span><span class="p">)</span>    <span class="c1"># Greater than → False</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;</span> <span class="n">b</span><span class="p">)</span>    <span class="c1"># Less than → True</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;=</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Greater than or equal → False</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;=</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Less than or equal → True</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">j</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="k">break</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;i=</span><span class="si">{</span><span class="n">i</span><span class="si">}</span><span class="s2">, j=</span><span class="si">{</span><span class="n">j</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>False
-True
-False
-True
-False
-True
+<div class="highlight"><pre><span></span><code>i=0, j=0
+i=0, j=1
+i=1, j=0
+i=1, j=1
+i=2, j=0
+i=2, j=1
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a>
 
 </p>
 
@@ -130,7 +122,9 @@ True
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

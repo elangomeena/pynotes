@@ -48,46 +48,46 @@
         title="Permalink to Py13">Py13</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">a</span>
-<span class="n">c</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">b</span><span class="p">)</span>      <span class="c1"># True (same object)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="ow">is</span> <span class="n">c</span><span class="p">)</span>      <span class="c1"># False (different objects)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">==</span> <span class="n">c</span><span class="p">)</span>      <span class="c1"># True (values equal)</span>
+    <div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter &#39;q&#39; to quit: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+        <span class="k">break</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>True
-False
-True
+<div class="highlight"><pre><span></span><code>Enter &#39;q&#39; to quit:  hi
+Enter &#39;q&#39; to quit:  GOOD
+Enter &#39;q&#39; to quit:  q
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="o">+</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Unary plus → 5</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">-</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Unary minus → -5</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">5</span>
-<span class="o">-</span><span class="mf">5</span>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">3</span>
+<span class="mf">5</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">pass</span>
 
-<span class="n">status</span> <span class="o">=</span> <span class="s2">&quot;Adult&quot;</span> <span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span> <span class="k">else</span> <span class="s2">&quot;Minor&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">status</span><span class="p">)</span>  <span class="c1"># Output: Adult</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Program continues running&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Adult
+<div class="highlight"><pre><span></span><code>Program continues running
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a>
 
 </p>
 
@@ -111,7 +111,9 @@ True
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

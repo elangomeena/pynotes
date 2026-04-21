@@ -48,55 +48,50 @@
         title="Permalink to Py12">Py12</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">10</span>
+    <div class="highlight"><pre><span></span><code><span class="n">found</span> <span class="o">=</span> <span class="kc">False</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span>   <span class="c1"># True</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">8</span> <span class="ow">or</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="mi">5</span><span class="p">)</span>    <span class="c1"># True</span>
-<span class="nb">print</span><span class="p">(</span><span class="ow">not</span><span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">))</span>        <span class="c1"># False</span>
+<span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">7</span><span class="p">:</span>
+        <span class="n">found</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">break</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Found:&quot;</span><span class="p">,</span> <span class="n">found</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>True
-True
-False
+<div class="highlight"><pre><span></span><code>Found: True
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>  <span class="c1"># 1010 in binary</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">4</span>   <span class="c1"># 0100 in binary</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&amp;</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># AND → 0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">|</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># OR → 14</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">^</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># XOR → 14</span>
-<span class="nb">print</span><span class="p">(</span><span class="o">~</span><span class="n">a</span><span class="p">)</span>      <span class="c1"># NOT → -11</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&lt;&lt;</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Left shift → 20</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">&gt;&gt;</span> <span class="mi">1</span><span class="p">)</span>  <span class="c1"># Right shift → 5</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">10</span><span class="p">:</span>
+        <span class="k">break</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Loop completed without break&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="mf">14</span>
-<span class="mf">14</span>
-<span class="o">-</span><span class="mf">11</span>
-<span class="mf">20</span>
-<span class="mf">5</span>
+<div class="highlight"><pre><span></span><code><span class="k">Loop</span><span class="w"> </span><span class="nv">completed</span><span class="w"> </span><span class="nv">without</span><span class="w"> </span><span class="k">break</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;apple&quot;</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">)</span>      <span class="c1"># True</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;grape&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">fruits</span><span class="p">)</span>  <span class="c1"># True</span>
+<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="s2">&quot;python123&quot;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">char</span><span class="o">.</span><span class="n">isdigit</span><span class="p">():</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>True
-True
+<div class="highlight"><pre><span></span><code>p
+y
+t
+h
+o
+n
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a>
 
 </p>
 
@@ -120,7 +115,9 @@ True
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

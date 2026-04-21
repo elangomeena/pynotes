@@ -48,43 +48,47 @@
         title="Permalink to Py9">Py9</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">product</span> <span class="o">=</span> <span class="s2">&quot;Laptop&quot;</span>
-<span class="n">price</span> <span class="o">=</span> <span class="mi">1200</span>
+    <div class="highlight"><pre><span></span><code><span class="n">person</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Engineer&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The price of </span><span class="si">{}</span><span class="s2"> is $</span><span class="si">{}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">product</span><span class="p">,</span> <span class="n">price</span><span class="p">))</span>
-<span class="c1"># Output: The price of Laptop is $1200</span>
+<span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span> <span class="o">=</span> <span class="n">person</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>        <span class="c1"># Alice</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>         <span class="c1"># 25</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">profession</span><span class="p">)</span>  <span class="c1"># Engineer</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>The price of Laptop is $1200
+<div class="highlight"><pre><span></span><code>Alice
+25
+Engineer
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">item</span> <span class="o">=</span> <span class="s2">&quot;Book&quot;</span>
-<span class="n">quantity</span> <span class="o">=</span> <span class="mi">5</span>
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You bought </span><span class="si">%d</span><span class="s2"> </span><span class="si">%s</span><span class="s2">(s).&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">quantity</span><span class="p">,</span> <span class="n">item</span><span class="p">))</span>
-<span class="c1"># Output: You bought 5 Book(s).</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>       <span class="c1"># Output: (3, 4)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>    <span class="c1"># Output: 3</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>You bought 5 Book(s).
+<div class="highlight"><pre><span></span><code>(3, 4)
+3
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter your name: &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello,&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>     <span class="c1"># Output: 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">20</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">)</span>    <span class="c1"># Output: True</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Enter your name:  Banu
-
-
-Hello, Banu
+<div class="highlight"><pre><span></span><code><span class="mf">3</span>
+<span class="n">True</span>
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
 
 </p>
 
@@ -108,7 +112,9 @@ Hello, Banu
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

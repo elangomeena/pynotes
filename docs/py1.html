@@ -48,51 +48,53 @@
         title="Permalink to Py1">Py1</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="c1"># Variable assignment</span>
-<span class="n">count</span> <span class="o">=</span> <span class="mi">2</span>
-<span class="n">price</span> <span class="o">=</span> <span class="mf">10.99</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Variable&quot;</span>
+    <div class="highlight"><pre><span></span><code><span class="n">integer_num</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">float_num</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">complex_num</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="n">j</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">)</span>   <span class="c1"># Output: 10</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>   <span class="c1"># Output: 99.99</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>    <span class="c1"># Output: Python</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">integer_num</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">float_num</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">complex_num</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;complex&#39;&gt;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">2</span>
-<span class="mf">10.99</span>
-<span class="n">Variable</span>
+<div class="highlight"><pre><span></span><code>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;complex&#39;&gt;
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span>
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>  <span class="c1"># Output: 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>  <span class="c1"># Output: 2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span>  <span class="c1"># Output: 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Addition → 17</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Subtraction → 7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Multiplication → 60</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Division → 2.4</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">10</span>
-<span class="mf">20</span>
-<span class="mf">30</span>
+<div class="highlight"><pre><span></span><code><span class="mf">17</span>
+<span class="mf">7</span>
+<span class="mf">60</span>
+<span class="mf">2.4</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">value</span> <span class="o">=</span> <span class="mi">100</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>  <span class="c1"># Output: 100</span>
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
 
-<span class="n">value</span> <span class="o">=</span> <span class="s2">&quot;Changed&quot;</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>  <span class="c1"># Output: Reassigned</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">//</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># Floor division → 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">%</span> <span class="n">y</span><span class="p">)</span>   <span class="c1"># Modulus → 2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">100</span>
-<span class="n">Changed</span>
+<div class="highlight"><pre><span></span><code><span class="mf">3</span>
+<span class="mf">2</span>
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
 
 </p>
 
@@ -116,7 +118,9 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

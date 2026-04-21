@@ -48,40 +48,42 @@
         title="Permalink to Py8">Py8</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Alice&quot;</span>
-<span class="n">age</span> <span class="o">=</span> <span class="mi">30</span>
+    <div class="highlight"><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">)</span>  
-<span class="c1"># Output: Alice 30</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>    <span class="c1"># First element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>   <span class="c1"># Last element</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Alice 30
+<div class="highlight"><pre><span></span><code>red
+blue
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">,</span> <span class="s2">&quot;powerful&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot; - &quot;</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;!&quot;</span><span class="p">)</span>
-<span class="c1"># Output: Python - is - powerful!</span>
+<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>   <span class="c1"># Output: (1, 2, 3)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>    <span class="c1"># Output: (0, 1, 2)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Python - is - powerful!
+<div class="highlight"><pre><span></span><code>(1, 2, 3)
+(0, 1, 2)
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Bob&quot;</span>
-<span class="n">score</span> <span class="o">=</span> <span class="mi">88</span>
+<div class="highlight"><pre><span></span><code><span class="n">coords</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Student </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> scored </span><span class="si">{</span><span class="n">score</span><span class="si">}</span><span class="s2"> marks.&quot;</span><span class="p">)</span>
-<span class="c1"># Output: Student Bob scored 88 marks.</span>
+<span class="c1">#coords[0] = 30  # This will raise TypeError</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">coords</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Student Bob scored 88 marks.
+<div class="highlight"><pre><span></span><code>(10, 20)
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
 
 </p>
 
@@ -105,7 +107,9 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

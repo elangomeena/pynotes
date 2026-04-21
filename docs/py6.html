@@ -48,56 +48,49 @@
         title="Permalink to Py6">Py6</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;python&quot;</span>
+    <div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
 
-<span class="c1"># String to list of characters</span>
-<span class="n">char_list</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">char_list</span><span class="p">)</span>  <span class="c1"># Output: [&#39;p&#39;, &#39;y&#39;, &#39;t&#39;, &#39;h&#39;, &#39;o&#39;, &#39;n&#39;]</span>
+<span class="n">data</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">last</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
 
-<span class="c1"># List of strings to single string</span>
-<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Type&quot;</span><span class="p">,</span> <span class="s2">&quot;Conversion&quot;</span><span class="p">]</span>
-<span class="n">joined</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">joined</span><span class="p">)</span>     <span class="c1"># Output: Python Type Conversion</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Output: [10, 30]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>  <span class="c1"># Output: 40</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">[&#39;p&#39;, &#39;y&#39;, &#39;t&#39;, &#39;h&#39;, &#39;o&#39;, &#39;n&#39;]</span>
-<span class="na">Python Type Conversion</span>
+<div class="highlight"><pre><span></span><code><span class="k">[10, 30]</span>
+<span class="na">40</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">numbers_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
 
-<span class="n">numbers_tuple</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">numbers_list</span><span class="p">)</span>
-<span class="n">numbers_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">numbers_list</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers_tuple</span><span class="p">)</span>  <span class="c1"># Output: (1, 2, 2, 3)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers_set</span><span class="p">)</span>    <span class="c1"># Output: {1, 2, 3}</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>       <span class="c1"># Output: 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="ow">in</span> <span class="n">values</span><span class="p">)</span>      <span class="c1"># Output: True</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">100</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span><span class="p">)</span> <span class="c1"># Output: True</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>(1, 2, 2, 3)
-{1, 2, 3}
+<div class="highlight"><pre><span></span><code><span class="mf">3</span>
+<span class="n">True</span>
+<span class="n">True</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">pairs_list</span> <span class="o">=</span> <span class="p">[(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">)]</span>
-<span class="n">pairs_tuple</span> <span class="o">=</span> <span class="p">((</span><span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="p">(</span><span class="s2">&quot;y&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;New York&quot;</span><span class="p">,</span> <span class="s2">&quot;London&quot;</span><span class="p">,</span> <span class="s2">&quot;Tokyo&quot;</span><span class="p">]</span>
 
-<span class="n">dict_from_list</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">pairs_list</span><span class="p">)</span>
-<span class="n">dict_from_tuple</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">pairs_tuple</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">dict_from_list</span><span class="p">)</span>   <span class="c1"># Output: {&#39;a&#39;: 1, &#39;b&#39;: 2}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dict_from_tuple</span><span class="p">)</span>  <span class="c1"># Output: {&#39;x&#39;: 10, &#39;y&#39;: 20}</span>
+<span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">city</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 1, &#39;b&#39;: 2}
-{&#39;x&#39;: 10, &#39;y&#39;: 20}
+<div class="highlight"><pre><span></span><code>New York
+London
+Tokyo
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
 
 </p>
 
@@ -121,7 +114,9 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

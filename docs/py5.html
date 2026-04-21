@@ -48,58 +48,45 @@
         title="Permalink to Py5">Py5</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">list_literal</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
-<span class="n">tuple_literal</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
-<span class="n">set_literal</span> <span class="o">=</span> <span class="p">{</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">}</span>
-<span class="n">dict_literal</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+    <div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">list_literal</span><span class="p">)</span>   <span class="c1"># Output: [1, 2, 3]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tuple_literal</span><span class="p">)</span>  <span class="c1"># Output: (4, 5, 6)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">set_literal</span><span class="p">)</span>    <span class="c1"># Output: {7, 8, 9}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">dict_literal</span><span class="p">)</span>   <span class="c1"># Output: {&#39;a&#39;: 1, &#39;b&#39;: 2}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>   <span class="c1"># Output: [1, 2, 3]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>    <span class="c1"># Output: [0, 1, 2]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>    <span class="c1"># Output: [3, 4, 5]</span>
 </code></pre></div>
 
 <div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3]</span>
-<span class="na">(4, 5, 6)</span>
-<span class="na">{8, 9, 7}</span>
-<span class="na">{&#39;a&#39;</span><span class="o">:</span><span class="w"> </span><span class="s">1, &#39;b&#39;: 2}</span>
+<span class="k">[0, 1, 2]</span>
+<span class="k">[3, 4, 5]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">binary</span> <span class="o">=</span> <span class="mb">0b1010</span>
-<span class="n">octal</span> <span class="o">=</span> <span class="mo">0o14</span>
-<span class="n">hexadecimal</span> <span class="o">=</span> <span class="mh">0xC</span>
+<div class="highlight"><pre><span></span><code><span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;pencil&quot;</span><span class="p">,</span> <span class="s2">&quot;eraser&quot;</span><span class="p">]</span>
+<span class="n">items</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;marker&quot;</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">binary</span><span class="p">)</span>       <span class="c1"># Output: 10</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">octal</span><span class="p">)</span>        <span class="c1"># Output: 10</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">hexadecimal</span><span class="p">)</span>  <span class="c1"># Output: 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>  <span class="c1"># Output: [&#39;pen&#39;, &#39;marker&#39;, &#39;eraser&#39;]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">10</span>
-<span class="mf">12</span>
-<span class="mf">12</span>
+<div class="highlight"><pre><span></span><code>[&#39;pen&#39;, &#39;marker&#39;, &#39;eraser&#39;]
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">7</span>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
 
-<span class="n">sum_result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-<span class="n">product_result</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">y</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">numbers</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">sum_result</span><span class="p">)</span>      <span class="c1"># Output: 8</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">product_result</span><span class="p">)</span>  <span class="c1"># Output: 15</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output: [1, 10, 2, 3, 4]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">17</span>
-<span class="mf">70</span>
+<div class="highlight"><pre><span></span><code>[1, 10, 2, 3, 4]
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
 
 </p>
 
@@ -123,7 +110,9 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 

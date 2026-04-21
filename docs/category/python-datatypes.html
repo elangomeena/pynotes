@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Set the viewport width to device width for mobile -->
+    <meta name="viewport" content="width=device-width" />
+
+    <title>My Python Notes - Python Datatypes</title>
+
+    <link rel="stylesheet" href="https://ELANGOMEENA.github.io/pynotes/theme/css/normalize.css" />
+    <link rel="stylesheet" href="https://ELANGOMEENA.github.io/pynotes/theme/css/foundation.min.css" />
+    <link rel="stylesheet" href="https://ELANGOMEENA.github.io/pynotes/theme/css/style.css" />
+    <link rel="stylesheet" href="https://ELANGOMEENA.github.io/pynotes/theme/css/pygments.css" />	
+    <script src="https://ELANGOMEENA.github.io/pynotes/theme/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<!-- Nav Bar -->
+<nav>
+<div class="top-bar">
+<div class="row">
+    <div class="large-9 large-centered columns">
+	    <h1><a href="https://ELANGOMEENA.github.io/pynotes">My Python Notes</a></h1>
+    </div>
+</div>
+</div>
+
+<!-- Show menu items and pages -->
+<div class="row">
+<div class="large-9 columns">
+    <ul class="button-group navigation">
+
+    </ul>
+</div>
+</div>
+</nav>
+<!-- End Nav -->
+
+
+<!-- Main Page Content and Sidebar -->
+<div class="row">
+
+    <!-- Main Blog Content -->
+    <div class="large-9 columns">
+        
+        
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py1.html"><h3 class="article-title">Py1</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">integer_num</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">float_num</span> <span class="o">=</span> <span class="mf">3.14</span>
+<span class="n">complex_num</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="n">j</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">integer_num</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">float_num</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">complex_num</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;complex&#39;&gt;</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&lt;class &#39;int&#39;&gt;
+&lt;class &#39;float&#39;&gt;
+&lt;class &#39;complex&#39;&gt;
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Addition → 17</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Subtraction → 7</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Multiplication → 60</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Division → 2.4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">17</span>
+<span class="mf">7</span>
+<span class="mf">60</span>
+<span class="mf">2.4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">//</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># Floor division → 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">%</span> <span class="n">y</span><span class="p">)</span>   <span class="c1"># Modulus → 2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3</span>
+<span class="mf">2</span>
+</code></pre></div>
+
+<hr>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+            </article>
+
+
+                <hr  class="gradient"/>
+
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py10.html"><h3 class="article-title">Py10</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">languages</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;Go&quot;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">lang</span> <span class="ow">in</span> <span class="n">languages</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">lang</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">Python</span>
+<span class="n">Java</span>
+<span class="k">Go</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">list_version</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
+<span class="n">tuple_again</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">list_version</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">list_version</span><span class="p">)</span>   <span class="c1"># [1, 2, 3]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">tuple_again</span><span class="p">)</span>    <span class="c1"># (1, 2, 3)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3]</span>
+<span class="na">(1, 2, 3)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_coordinates</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">(</span><span class="mf">40.7128</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.0060</span><span class="p">)</span>
+
+<span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">get_coordinates</span><span class="p">()</span>
+
+<span class="nb">print …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py10.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py2.html"><h3 class="article-title">Py2</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">base</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">exponent</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">base</span> <span class="o">**</span> <span class="n">exponent</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 16</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1296</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">16</span><span class="p">))</span>   <span class="c1"># Square root → 4.0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">ceil</span><span class="p">(</span><span class="mf">4.3</span><span class="p">))</span>  <span class="c1"># Ceiling → 5</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">floor</span><span class="p">(</span><span class="mf">4.9</span><span class="p">))</span> <span class="c1"># Floor → 4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">4.0</span>
+<span class="mf">5</span>
+<span class="mf">4</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+
+<span class="n">angle</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">radians</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">angle …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py2.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py3.html"><h3 class="article-title">Py3</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">value</span> <span class="o">=</span> <span class="mf">3.5678</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>      <span class="c1"># Output: 4</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>   <span class="c1"># Output: 3.57</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">4</span>
+<span class="mf">3.57</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="n">number</span> <span class="o">=</span> <span class="o">-</span><span class="mi">25</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>       <span class="c1"># Output: 25</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">copysign</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># Output: -10.0</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">25</span>
+<span class="o">-</span><span class="mf">10.0</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>      <span class="c1"># Random integer between 1 and …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py3.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py4.html"><h3 class="article-title">Py4</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">statistics</span>
+
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">statistics</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>   <span class="c1"># Mean → 30</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">statistics</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span> <span class="c1"># Median → 30</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">statistics</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>  <span class="c1"># Standard deviation</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">30</span>
+<span class="mf">30</span>
+<span class="mf">15.811388300841896</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">empty_list</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+<span class="n">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">empty_list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mixed</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[]
+[1 …</code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py4.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py5.html"><h3 class="article-title">Py5</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>   <span class="c1"># Output: [1, 2, 3]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>    <span class="c1"># Output: [0, 1, 2]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">[</span><span class="mi">3</span><span class="p">:])</span>    <span class="c1"># Output: [3, 4, 5]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3]</span>
+<span class="k">[0, 1, 2]</span>
+<span class="k">[3, 4, 5]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">items</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;pen&quot;</span><span class="p">,</span> <span class="s2">&quot;pencil&quot;</span><span class="p">,</span> <span class="s2">&quot;eraser&quot;</span><span class="p">]</span>
+<span class="n">items</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;marker&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">items</span><span class="p">)</span>  <span class="c1"># Output: [&#39;pen&#39;, &#39;marker …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py5.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py6.html"><h3 class="article-title">Py6</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">]</span>
+
+<span class="n">data</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+<span class="n">last</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>  <span class="c1"># Output: [10, 30]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>  <span class="c1"># Output: 40</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">[10, 30]</span>
+<span class="na">40</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">values</span><span class="p">))</span>       <span class="c1"># Output: 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="ow">in</span> <span class="n">values</span><span class="p">)</span>      <span class="c1"># Output: True</span>
+<span class="nb">print</span><span class="p">(</span><span class="mi">100</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">values</span><span class="p">)</span> <span class="c1"># Output: True</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">3</span>
+<span class="n">True</span>
+<span class="n">True</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">cities</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;New …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py6.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py7.html"><h3 class="article-title">Py7</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>  <span class="c1"># Output: [0, 1, 4, 9, 16]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[0, 1, 4, 9, 16]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+
+<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output: [1, 2, 3, 4]</span>
+
+<span class="n">numbers</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output: [4, 3, 2, 1]</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3, 4]</span>
+<span class="k">[4, 3 …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py7.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py8.html"><h3 class="article-title">Py8</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">colors</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">,</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span> <span class="s2">&quot;blue&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>    <span class="c1"># First element</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>   <span class="c1"># Last element</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>red
+blue
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">4</span><span class="p">])</span>   <span class="c1"># Output: (1, 2, 3)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">values</span><span class="p">[:</span><span class="mi">3</span><span class="p">])</span>    <span class="c1"># Output: (0, 1, 2)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>(1, 2, 3)
+(0, 1, 2)
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">coords</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="c1">#coords[0] = 30  # This …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py8.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py9.html"><h3 class="article-title">Py9</h3></a>
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">person</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;Engineer&quot;</span><span class="p">)</span>
+
+<span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">profession</span> <span class="o">=</span> <span class="n">person</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>        <span class="c1"># Alice</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">age</span><span class="p">)</span>         <span class="c1"># 25</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">profession</span><span class="p">)</span>  <span class="c1"># Engineer</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Alice
+25
+Engineer
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>       <span class="c1"># Output: (3, 4)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>    <span class="c1"># Output: 3</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>(3, 4)
+3
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>     <span class="c1"># Output …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py9.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+            <!-- /#posts-list -->
+<div class="pagination-centered">
+<h6 class="subheader">Page 1 of 1</h6>
+
+<p>
+
+</p>
+</div>
+
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Sidebar -->
+    <aside class="large-3 columns">
+        <h5 class="sidebar-title">Site</h5>
+        <ul class="side-nav">
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/archives.html">Archives</a>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/tags.html">Tags</a>
+        </ul>
+
+		
+        <h5 class="sidebar-title">Categories</h5>
+        <ul class="side-nav">
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
+   
+        </ul>
+
+		
+        <h5 class="sidebar-title">Social</h5>
+        <ul class="side-nav">
+            <li><a href="https://github.com/ELANGOMEENA>/">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/meena-k7892">LinkedIn</a></li>
+        </ul>
+
+    </aside> <!-- End Sidebar -->
+
+</div> <!-- End Main Content and Sidebar -->
+
+
+<!-- Footer -->
+<footer class="row">
+    <div class="large-12 columns">
+        <hr />
+        <div class="row">
+            <div class="large-6 columns">
+              <!--                  <p>My Python Notes by Meena K</p> -->
+            </div>
+            </div>
+    </div>
+</footer>
+</body>
+</html>

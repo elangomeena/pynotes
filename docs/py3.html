@@ -48,57 +48,44 @@
         title="Permalink to Py3">Py3</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-04-17T00:00:00-04:00">Fri 17 April 2026
+<h6 class="subheader" title="2026-04-21T00:00:00-04:00">Tue 21 April 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">int_value</span> <span class="o">=</span> <span class="mi">7</span>
-<span class="n">string_value</span> <span class="o">=</span> <span class="s2">&quot;3.14&quot;</span>
+    <div class="highlight"><pre><span></span><code><span class="n">value</span> <span class="o">=</span> <span class="mf">3.5678</span>
 
-<span class="n">float_from_int</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">int_value</span><span class="p">)</span>
-<span class="n">float_from_string</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">string_value</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">float_from_int</span><span class="p">)</span>      <span class="c1"># Output: 7.0</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">float_from_string</span><span class="p">)</span>   <span class="c1"># Output: 3.14</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">value</span><span class="p">))</span>      <span class="c1"># Output: 4</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>   <span class="c1"># Output: 3.57</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">7.0</span>
-<span class="mf">3.14</span>
+<div class="highlight"><pre><span></span><code><span class="mf">4</span>
+<span class="mf">3.57</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span>        <span class="c1"># Output: False</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>        <span class="c1"># Output: True</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">))</span>       <span class="c1"># Output: False</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">(</span><span class="s2">&quot;text&quot;</span><span class="p">))</span>   <span class="c1"># Output: True</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">([]))</span>       <span class="c1"># Output: False</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">bool</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]))</span>   <span class="c1"># Output: True</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">math</span>
+<span class="n">number</span> <span class="o">=</span> <span class="o">-</span><span class="mi">25</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">number</span><span class="p">))</span>       <span class="c1"># Output: 25</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">math</span><span class="o">.</span><span class="n">copysign</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># Output: -10.0</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>False
-True
-False
-True
-False
-True
+<div class="highlight"><pre><span></span><code><span class="mf">25</span>
+<span class="o">-</span><span class="mf">10.0</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">integer_literal</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">float_literal</span> <span class="o">=</span> <span class="mf">5.14</span>
-<span class="n">complex_literal</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">+</span> <span class="mi">6</span><span class="n">j</span>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">random</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">integer_literal</span><span class="p">)</span>  <span class="c1"># Output: 42</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">float_literal</span><span class="p">)</span>    <span class="c1"># Output: 3.14</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">complex_literal</span><span class="p">)</span>  <span class="c1"># Output: (2+3j)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>      <span class="c1"># Random integer between 1 and 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">))</span>   <span class="c1"># Random float between 1.0 and 5.0</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">1</span>
-<span class="mf">5.14</span>
-<span class="p">(</span><span class="mf">4</span><span class="o">+</span><span class="mf">6</span><span class="n">j</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="mf">2</span>
+<span class="mf">2.391799402586304</span>
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
 
 </p>
 
@@ -122,7 +109,9 @@ True
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
-            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-programs.html">Python Programs</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a></li>
    
         </ul>
 
