@@ -48,51 +48,47 @@
         title="Permalink to Py4">Py4</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-11T00:00:00-04:00">Mon 11 May 2026
+<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">statistics</span>
-
-<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">50</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">statistics</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>   <span class="c1"># Mean → 30</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">statistics</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span> <span class="c1"># Median → 30</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">statistics</span><span class="o">.</span><span class="n">stdev</span><span class="p">(</span><span class="n">numbers</span><span class="p">))</span>  <span class="c1"># Standard deviation</span>
+    <div class="highlight"><pre><span></span><code><span class="n">indexed</span> <span class="o">=</span> <span class="p">[(</span><span class="n">i</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">])]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">indexed</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">30</span>
-<span class="mf">30</span>
-<span class="mf">15.811388300841896</span>
+<div class="highlight"><pre><span></span><code>[(0, &#39;a&#39;), (1, &#39;b&#39;), (2, &#39;c&#39;)]
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">empty_list</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
-<span class="n">mixed</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mf">5.5</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">empty_list</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mixed</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">unique</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]}</span>
+<span class="n">mapped</span> <span class="o">=</span> <span class="p">{</span><span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">unique</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mapped</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>[]
-[1, 2, 3, 4, 5]
-[10, &#39;Python&#39;, True, 5.5]
+<div class="highlight"><pre><span></span><code>{1, 2, 3}
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">fruits</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;apple&quot;</span><span class="p">,</span> <span class="s2">&quot;banana&quot;</span><span class="p">,</span> <span class="s2">&quot;orange&quot;</span><span class="p">]</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>   <span class="c1"># First element</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fruits</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># Last element</span>
+<div class="highlight"><pre><span></span><code><span class="n">pipeline</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="o">*</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pipeline</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>apple
-orange
+<div class="highlight"><pre><span></span><code>[2, 4, 6, 8]
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">orders</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;100&#39;</span><span class="p">,</span> <span class="s1">&#39;20000&#39;</span><span class="p">,</span> <span class="s1">&#39;30000&#39;</span><span class="p">]</span>
+
+<span class="n">high_value_orders</span> <span class="o">=</span> <span class="p">[</span><span class="n">o</span> <span class="k">for</span> <span class="n">o</span> <span class="ow">in</span> <span class="n">orders</span> <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">o</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1000</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">high_value_orders</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[&#39;20000&#39;, &#39;30000&#39;]
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
 
 </p>
 
@@ -116,6 +112,7 @@ orange
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>

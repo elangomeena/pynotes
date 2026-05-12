@@ -48,53 +48,34 @@
         title="Permalink to Py1">Py1</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-11T00:00:00-04:00">Mon 11 May 2026
+<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">integer_num</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">float_num</span> <span class="o">=</span> <span class="mf">3.14</span>
-<span class="n">complex_num</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">+</span> <span class="mi">5</span><span class="n">j</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">integer_num</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;int&#39;&gt;</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">float_num</span><span class="p">))</span>    <span class="c1"># &lt;class &#39;float&#39;&gt;</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">type</span><span class="p">(</span><span class="n">complex_num</span><span class="p">))</span>  <span class="c1"># &lt;class &#39;complex&#39;&gt;</span>
+    <div class="highlight"><pre><span></span><code><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>&lt;class &#39;int&#39;&gt;
-&lt;class &#39;float&#39;&gt;
-&lt;class &#39;complex&#39;&gt;
+<div class="highlight"><pre><span></span><code>[0, 1, 4, 9, 16]
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">a</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="n">b</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Addition → 17</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">-</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Subtraction → 7</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">*</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Multiplication → 60</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">a</span> <span class="o">/</span> <span class="n">b</span><span class="p">)</span>   <span class="c1"># Division → 2.4</span>
+<div class="highlight"><pre><span></span><code><span class="n">even_numbers</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">x</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">even_numbers</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">17</span>
-<span class="mf">7</span>
-<span class="mf">60</span>
-<span class="mf">2.4</span>
+<div class="highlight"><pre><span></span><code>[0, 2, 4, 6, 8]
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="mi">17</span>
-<span class="n">y</span> <span class="o">=</span> <span class="mi">5</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">//</span> <span class="n">y</span><span class="p">)</span>  <span class="c1"># Floor division → 3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span> <span class="o">%</span> <span class="n">y</span><span class="p">)</span>   <span class="c1"># Modulus → 2</span>
+<div class="highlight"><pre><span></span><code><span class="n">matrix</span> <span class="o">=</span> <span class="p">[[</span><span class="n">i</span> <span class="o">*</span> <span class="n">j</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">matrix</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">3</span>
-<span class="mf">2</span>
+<div class="highlight"><pre><span></span><code>[[0, 0, 0], [0, 1, 2], [0, 2, 4]]
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
 
 </p>
 
@@ -118,6 +99,7 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>

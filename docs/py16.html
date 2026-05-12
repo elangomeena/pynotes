@@ -48,51 +48,66 @@
         title="Permalink to Py16">Py16</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-11T00:00:00-04:00">Mon 11 May 2026
+<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">{</span><span class="mi">5</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>       <span class="c1"># Output: 3</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">10</span> <span class="ow">in</span> <span class="n">data</span><span class="p">)</span>      <span class="c1"># True</span>
-<span class="nb">print</span><span class="p">(</span><span class="mi">100</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">data</span><span class="p">)</span> <span class="c1"># True</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">my_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Before execution&quot;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">3</span>
-<span class="n">True</span>
-<span class="n">True</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">threshold_checker</span><span class="p">(</span><span class="n">threshold</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">check</span><span class="p">(</span><span class="n">value</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">value</span> <span class="o">&gt;</span> <span class="n">threshold</span>
+    <span class="k">return</span> <span class="n">check</span>
+
+<span class="n">high_temp</span> <span class="o">=</span> <span class="n">threshold_checker</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">high_temp</span><span class="p">(</span><span class="mi">35</span><span class="p">))</span>  <span class="c1"># False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">high_temp</span><span class="p">(</span><span class="mi">45</span><span class="p">))</span>  <span class="c1"># True</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">languages</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;Go&quot;</span><span class="p">}</span>
-
-<span class="k">for</span> <span class="n">lang</span> <span class="ow">in</span> <span class="n">languages</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">lang</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code>False
+True
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">Python</span>
-<span class="k">Go</span>
-<span class="n">Java</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">my_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Before function execution&quot;</span><span class="p">)</span>
+        <span class="n">func</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;After function execution&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
+
+<span class="nd">@my_decorator</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">say_hello</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello&quot;</span><span class="p">)</span>
+
+<span class="n">say_hello</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span> <span class="o">|</span> <span class="n">B</span><span class="p">)</span>  <span class="c1"># Union → {1, 2, 3, 4, 5, 6}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span> <span class="o">&amp;</span> <span class="n">B</span><span class="p">)</span>  <span class="c1"># Intersection → {3, 4}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span> <span class="o">-</span> <span class="n">B</span><span class="p">)</span>  <span class="c1"># Difference → {1, 2}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span> <span class="o">^</span> <span class="n">B</span><span class="p">)</span>  <span class="c1"># Symmetric Difference → {1, 2, 5, 6}</span>
+<div class="highlight"><pre><span></span><code>Before function execution
+Hello
+After function execution
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>{1, 2, 3, 4, 5, 6}
-{3, 4}
-{1, 2}
-{1, 2, 5, 6}
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">greet</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Welcome&quot;</span><span class="p">)</span>
+
+<span class="n">greet</span> <span class="o">=</span> <span class="n">my_decorator</span><span class="p">(</span><span class="n">greet</span><span class="p">)</span>
+<span class="n">greet</span><span class="p">()</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Before function execution
+Welcome
+After function execution
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
 
 </p>
 
@@ -116,6 +131,7 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>

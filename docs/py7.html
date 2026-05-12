@@ -48,50 +48,60 @@
         title="Permalink to Py7">Py7</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-11T00:00:00-04:00">Mon 11 May 2026
+<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">squares</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">squares</span><span class="p">)</span>  <span class="c1"># Output: [0, 1, 4, 9, 16]</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">square_func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="n">square_lambda</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">**</span> <span class="mi">2</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">square_func</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>     <span class="c1"># 16</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">square_lambda</span><span class="p">(</span><span class="mi">4</span><span class="p">))</span>   <span class="c1"># 16</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>[0, 1, 4, 9, 16]
+<div class="highlight"><pre><span></span><code><span class="mf">16</span>
+<span class="mf">16</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="n">employees</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;salary&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;salary&quot;</span><span class="p">:</span> <span class="mi">3000</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Charlie&quot;</span><span class="p">,</span> <span class="s2">&quot;salary&quot;</span><span class="p">:</span> <span class="mi">7000</span><span class="p">}</span>
+<span class="p">]</span>
 
-<span class="n">numbers</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output: [1, 2, 3, 4]</span>
-
-<span class="n">numbers</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output: [4, 3, 2, 1]</span>
+<span class="n">highest_paid</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">employees</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">emp</span><span class="p">:</span> <span class="n">emp</span><span class="p">[</span><span class="s2">&quot;salary&quot;</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">highest_paid</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3, 4]</span>
-<span class="k">[4, 3, 2, 1]</span>
+<div class="highlight"><pre><span></span><code>{&#39;name&#39;: &#39;Charlie&#39;, &#39;salary&#39;: 7000}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">empty_tuple</span> <span class="o">=</span> <span class="p">()</span>
-<span class="n">single_element</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,)</span>   <span class="c1"># Comma required for single-element tuple</span>
-<span class="n">numbers</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
-<span class="n">mixed</span> <span class="o">=</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="kc">True</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">empty_tuple</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">single_element</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mixed</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  <span class="c1"># 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">iterator</span><span class="p">))</span>  <span class="c1"># 2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>()
-(10,)
-(1, 2, 3, 4)
-(10, &#39;Python&#39;, True)
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">data</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="nb">iter</span><span class="p">(</span><span class="n">data</span><span class="p">))</span>     <span class="c1"># Iterable converted to iterator</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">isinstance</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="nb">list</span><span class="p">))</span>  <span class="c1"># Iterable</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>&lt;list_iterator object at 0x00000192EA129240&gt;
+True
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
 
 </p>
 
@@ -115,6 +125,7 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>

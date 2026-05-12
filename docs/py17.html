@@ -48,48 +48,84 @@
         title="Permalink to Py17">Py17</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-11T00:00:00-04:00">Mon 11 May 2026
+<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">A</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
-<span class="n">B</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">}</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">log_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Arguments:&quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">B</span><span class="o">.</span><span class="n">issubset</span><span class="p">(</span><span class="n">A</span><span class="p">))</span>     <span class="c1"># True</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">A</span><span class="o">.</span><span class="n">issuperset</span><span class="p">(</span><span class="n">B</span><span class="p">))</span>   <span class="c1"># True</span>
+<span class="nd">@log_decorator</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">add</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">add</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>True
-True
+<div class="highlight"><pre><span></span><code>Arguments: (5, 3) {}
+8
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">values_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">bold</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&lt;b&gt;&quot;</span><span class="p">)</span>
+        <span class="n">func</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&lt;/b&gt;&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 
-<span class="n">list_version</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">values_set</span><span class="p">)</span>
-<span class="n">tuple_version</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">values_set</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">italic</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&lt;i&gt;&quot;</span><span class="p">)</span>
+        <span class="n">func</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;&lt;/i&gt;&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">list_version</span><span class="p">)</span>   <span class="c1"># [1, 2, 3]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tuple_version</span><span class="p">)</span>  <span class="c1"># (1, 2, 3)</span>
+<span class="nd">@bold</span>
+<span class="nd">@italic</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">display</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Text&quot;</span><span class="p">)</span>
+
+<span class="n">display</span><span class="p">()</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3]</span>
-<span class="na">(1, 2, 3)</span>
+<div class="highlight"><pre><span></span><code><span class="nt">&lt;b&gt;</span>
+<span class="nt">&lt;i&gt;</span>
+Text
+<span class="nt">&lt;/i&gt;</span>
+<span class="nt">&lt;/b&gt;</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">empty_dict</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">student</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">22</span><span class="p">,</span> <span class="s2">&quot;grade&quot;</span><span class="p">:</span> <span class="s2">&quot;A&quot;</span><span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">uppercase</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">():</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="n">func</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">empty_dict</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">student</span><span class="p">)</span>
+<span class="nd">@uppercase</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">message</span><span class="p">():</span>
+    <span class="k">return</span> <span class="s2">&quot;hello world&quot;</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">())</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>{}
-{&#39;name&#39;: &#39;Alice&#39;, &#39;age&#39;: 22, &#39;grade&#39;: &#39;A&#39;}
+<div class="highlight"><pre><span></span><code>HELLO WORLD
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">functools</span><span class="w"> </span><span class="kn">import</span> <span class="n">wraps</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">my_decorator</span><span class="p">(</span><span class="n">func</span><span class="p">):</span>
+    <span class="nd">@wraps</span><span class="p">(</span><span class="n">func</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">wrapper</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">wrapper</span>
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
 
 </p>
 
@@ -113,6 +149,7 @@ True
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>

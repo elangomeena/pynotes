@@ -48,50 +48,75 @@
         title="Permalink to Py10">Py10</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-11T00:00:00-04:00">Mon 11 May 2026
+<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="n">languages</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;Java&quot;</span><span class="p">,</span> <span class="s2">&quot;Go&quot;</span><span class="p">)</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">simple_generator</span><span class="p">():</span>
+    <span class="k">yield</span> <span class="mi">1</span>
+    <span class="k">yield</span> <span class="mi">2</span>
+    <span class="k">yield</span> <span class="mi">3</span>
 
-<span class="k">for</span> <span class="n">lang</span> <span class="ow">in</span> <span class="n">languages</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">lang</span><span class="p">)</span>
+<span class="n">gen</span> <span class="o">=</span> <span class="n">simple_generator</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>  <span class="c1"># 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>  <span class="c1"># 2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">Python</span>
-<span class="n">Java</span>
-<span class="k">Go</span>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">2</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">values</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">normal_function</span><span class="p">():</span>
+    <span class="k">return</span> <span class="mi">10</span>
+    <span class="k">return</span> <span class="mi">20</span>
 
-<span class="n">list_version</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">values</span><span class="p">)</span>
-<span class="n">tuple_again</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">list_version</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">generator_function</span><span class="p">():</span>
+    <span class="k">yield</span> <span class="mi">10</span>
+    <span class="k">yield</span> <span class="mi">20</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">list_version</span><span class="p">)</span>   <span class="c1"># [1, 2, 3]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tuple_again</span><span class="p">)</span>    <span class="c1"># (1, 2, 3)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">normal_function</span><span class="p">())</span>          <span class="c1"># 10</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">generator_function</span><span class="p">()))</span> <span class="c1"># [10, 20]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">[1, 2, 3]</span>
-<span class="na">(1, 2, 3)</span>
+<div class="highlight"><pre><span></span><code><span class="mf">10</span>
+<span class="err">[</span><span class="mf">10</span><span class="p">,</span><span class="w"> </span><span class="mf">20</span><span class="err">]</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">get_coordinates</span><span class="p">():</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mf">40.7128</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.0060</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">count_up</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="k">yield</span> <span class="n">i</span>
 
-<span class="n">lat</span><span class="p">,</span> <span class="n">lon</span> <span class="o">=</span> <span class="n">get_coordinates</span><span class="p">()</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">lat</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">lon</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">count_up</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">40.7128</span>
-<span class="o">-</span><span class="mf">74.006</span>
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">2</span>
+<span class="mf">3</span>
+<span class="mf">4</span>
+<span class="mf">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">demo</span><span class="p">():</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Start&quot;</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Resume&quot;</span><span class="p">)</span>
+    <span class="k">yield</span> <span class="mi">2</span>
+
+<span class="n">g</span> <span class="o">=</span> <span class="n">demo</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">g</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Start
+1
+Resume
+2
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
 
 </p>
 
@@ -115,6 +140,7 @@
         <ul class="side-nav">
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>
