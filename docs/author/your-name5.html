@@ -47,8 +47,8 @@
 
 
             <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py13-9536.html"><h3 class="article-title">Py13-9536</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
+                <a href="https://ELANGOMEENA.github.io/pynotes/py13-1858.html"><h3 class="article-title">Py13-1858</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
 </h6>
 
 
@@ -78,7 +78,231 @@ python programming
 
 
 
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-9536.html">Read More</a>
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-1858.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py13-2073.html"><h3 class="article-title">Py13-2073</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;Enter &#39;q&#39; to quit: &quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">user_input</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;q&#39;</span><span class="p">:</span>
+        <span class="k">break</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>Enter &#39;q&#39; to quit:  hi
+Enter &#39;q&#39; to quit:  GOOD
+Enter &#39;q&#39; to quit:  q
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">num</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">continue</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">num</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1</span>
+<span class="mf">3</span>
+<span class="mf">5</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">if</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">pass …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-2073.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py13-2101.html"><h3 class="article-title">Py13-2101</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Number</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">value</span>
+
+<span class="n">n1</span> <span class="o">=</span> <span class="n">Number</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">n2</span> <span class="o">=</span> <span class="n">Number</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">n1</span> <span class="o">+</span> <span class="n">n2</span><span class="p">)</span>  <span class="c1"># Output: 30</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">30</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Vector</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">=</span> <span class="n">x</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="fm">__add__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Vector</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x</span> <span class="o">+</span> <span class="n">other</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+
+<span class="n">v1 …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-objects-and-classes.html">Python Objects and Classes</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-2101.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py13-2835.html"><h3 class="article-title">Py13-2835</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="n">epoch_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">epoch_time</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">1778648755.3132865</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">datetime</span><span class="w"> </span><span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">log_event</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+    <span class="n">current_time</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&quot;%H:%M:%S&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;[</span><span class="si">{</span><span class="n">current_time</span><span class="si">}</span><span class="s2">] </span><span class="si">{</span><span class="n">event</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">log_event</span><span class="p">(</span><span class="s2">&quot;Service initialized&quot;</span><span class="p">)</span>
+<span class="n">log_event</span><span class="p">(</span><span class="s2">&quot;Task executed&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>[10:36:03] Service initialized
+[10:36:03] Task executed
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+
+<span class="n">timestamp</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">timestamp …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datetime.html">Python datetime</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-2835.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py13-4889.html"><h3 class="article-title">Py13-4889</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="n">requests</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">handle_request</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">requests</span>
+    <span class="n">requests</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">handle_request</span><span class="p">()</span>
+<span class="n">handle_request</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">requests</span><span class="p">)</span>  <span class="c1"># Output: 2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="mf">2</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;light&quot;</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">toggle_mode</span><span class="p">():</span>
+    <span class="k">global</span> <span class="n">mode</span>
+    <span class="k">if</span> <span class="n">mode</span> <span class="o">==</span> <span class="s2">&quot;light&quot;</span><span class="p">:</span>
+        <span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;dark&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">mode</span> <span class="o">=</span> <span class="s2">&quot;light&quot;</span>
+
+<span class="n">toggle_mode</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mode</span><span class="p">)</span>  <span class="c1"># Output: dark</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>dark
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="n">config</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;theme&quot;</span><span class="p">:</span> <span class="s2">&quot;dark&quot;</span><span class="p">}</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">update_config</span><span class="p">(</span><span class="n">new_theme</span><span class="p">):</span>
+    <span class="n">config</span><span class="p">[</span><span class="s2">&quot;theme&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_theme</span>
+    <span class="k">return</span> <span class="n">config</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">update_config</span><span class="p">(</span><span class="s2">&quot;light&quot;</span><span class="p">))</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>{&#39;theme …</code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-functions.html">Python Functions</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-4889.html">Read More</a>
+                <hr  class="gradient"/>
+            </article>
+
+        
+
+
+            <article>
+                <a href="https://ELANGOMEENA.github.io/pynotes/py13-7810.html"><h3 class="article-title">Py13-7810</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+</h6>
+
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;unicode.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&quot;Name&quot;</span><span class="p">,</span> <span class="s2">&quot;City&quot;</span><span class="p">])</span>
+    <span class="n">writer</span><span class="o">.</span><span class="n">writerow</span><span class="p">([</span><span class="s2">&quot;José&quot;</span><span class="p">,</span> <span class="s2">&quot;München&quot;</span><span class="p">])</span>
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">csv</span>
+
+<span class="n">records</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">25</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Rome&quot;</span><span class="p">},</span>
+    <span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bob&quot;</span><span class="p">,</span> <span class="s2">&quot;age&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s2">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Madrid&quot;</span><span class="p">}</span>
+<span class="p">]</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;records.csv&quot;</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">newline</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+    <span class="n">writer</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a>
+
+</p>
+
+
+
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py13-7810.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -87,7 +311,7 @@ python programming
 
             <article>
                 <a href="https://ELANGOMEENA.github.io/pynotes/py14.html"><h3 class="article-title">Py14</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
 </h6>
 
 
@@ -140,182 +364,8 @@ python programming
 
 
             <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py14-2576.html"><h3 class="article-title">Py14-2576</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Repeater</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">times</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">*</span> <span class="n">times</span>
-
-<span class="n">r</span> <span class="o">=</span> <span class="n">Repeater</span><span class="p">(</span><span class="s2">&quot;AI &quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Output: AI AI AI </span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>AI AI AI
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Calculator</span><span class="p">:</span>
-    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="fm">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">/</span> <span class="n">other</span><span class="o">.</span><span class="n">value</span>
-
-<span class="n">c1</span> <span class="o">=</span> <span class="n">Calculator …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-objects-and-classes.html">Python Objects and Classes</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-2576.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py14-3245.html"><h3 class="article-title">Py14-3245</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="n">word</span> <span class="o">=</span> <span class="s2">&quot;Code&quot;</span>
-
-<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>C
-o
-d
-e
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">empty_set</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
-<span class="n">unique_numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
-<span class="n">mixed_set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="kc">True</span><span class="p">}</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">empty_set</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">unique_numbers</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mixed_set</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>set()
-{1, 2, 3, 4}
-{1, 3.5, &#39;Python&#39;}
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">numbers</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">}</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>  <span class="c1"># Output …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-3245.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py14-4616.html"><h3 class="article-title">Py14-4616</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 30</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">30</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
-
-<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eligible to vote&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Eligible to vote
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">temperature</span> <span class="o">=</span> <span class="mi">15</span>
-
-<span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s warm outside&quot;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s cold outside&quot;</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>It&#39;s cold outside
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-4616.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py14-6137.html"><h3 class="article-title">Py14-6137</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">future_feature</span><span class="p">():</span>
-    <span class="k">pass</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">User</span><span class="p">:</span>
-    <span class="k">pass</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
-        <span class="k">pass</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="mf">1</span>
-<span class="mf">2</span>
-<span class="mf">4</span>
-</code></pre></div>
-
-<hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a>
-
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-6137.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py14-9547.html"><h3 class="article-title">Py14-9547</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
+                <a href="https://ELANGOMEENA.github.io/pynotes/py14-1404.html"><h3 class="article-title">Py14-1404</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
 </h6>
 
 
@@ -357,7 +407,7 @@ e
 
 
 
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-9547.html">Read More</a>
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-1404.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -365,98 +415,46 @@ e
 
 
             <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py15.html"><h3 class="article-title">Py15</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
+                <a href="https://ELANGOMEENA.github.io/pynotes/py14-1669.html"><h3 class="article-title">Py14-1669</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="n">factor</span> <span class="o">=</span> <span class="mi">10</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">using_global</span><span class="p">():</span>
-    <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factor</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">using_closure</span><span class="p">():</span>
-    <span class="n">factor</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="k">return</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span> <span class="o">*</span> <span class="n">factor</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">using_closure</span><span class="p">()(</span><span class="mi">5</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">result</span> <span class="o">=</span> <span class="mi">10</span> <span class="o">+</span> <span class="mi">5</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">**</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>  <span class="c1"># Output: 30</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">50</span>
+<div class="highlight"><pre><span></span><code><span class="mf">30</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">make_adder</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">adder</span><span class="p">(</span><span class="n">y</span><span class="p">):</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
-    <span class="k">return</span> <span class="n">adder</span>
+<div class="highlight"><pre><span></span><code><span class="n">age</span> <span class="o">=</span> <span class="mi">20</span>
 
-<span class="n">add5</span> <span class="o">=</span> <span class="n">make_adder</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
-<span class="n">add10</span> <span class="o">=</span> <span class="n">make_adder</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">add5</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>    <span class="c1"># 8</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">add10</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>   <span class="c1"># 13</span>
+<span class="k">if</span> <span class="n">age</span> <span class="o">&gt;=</span> <span class="mi">18</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Eligible to vote&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">8</span>
-<span class="mf">13</span>
+<div class="highlight"><pre><span></span><code>Eligible to vote
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
+<div class="highlight"><pre><span></span><code><span class="n">temperature</span> <span class="o">=</span> <span class="mi">15</span>
 
-</p>
-
-
-
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py15.html">Read More</a>
-                <hr  class="gradient"/>
-            </article>
-
-        
-
-
-            <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py15-2165.html"><h3 class="article-title">Py15-2165</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
-</h6>
-
-
-<div class="highlight"><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="mi">85</span>
-
-<span class="k">if</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mi">90</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Excellent&quot;</span><span class="p">)</span>
-<span class="k">elif</span> <span class="n">score</span> <span class="o">&gt;</span> <span class="mi">80</span><span class="p">:</span>
-    <span class="k">pass</span>
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">&gt;</span> <span class="mi">25</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s warm outside&quot;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Needs Improvement&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;It&#39;s cold outside&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
-        <span class="k">pass</span>      <span class="c1"># Does nothing</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="mf">1</span>
-<span class="mf">2</span>
-<span class="mf">3</span>
-<span class="mf">4</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">try</span><span class="p">:</span>
-    <span class="n">risky_operation</span><span class="p">()</span>
-<span class="k">except</span> <span class="ne">Exception</span><span class="p">:</span>
-    <span class="k">pass</span>
+<div class="highlight"><pre><span></span><code>It&#39;s cold outside
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a>
+<p><strong>Score: 0</strong></p><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-fundamentals.html">Python Fundamentals</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py15-2165.html">Read More</a>
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-1669.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
@@ -464,48 +462,45 @@ e
 
 
             <article>
-                <a href="https://ELANGOMEENA.github.io/pynotes/py15-4624.html"><h3 class="article-title">Py15-4624</h3></a>
-<h6 class="subheader" title="2026-05-12T00:00:00-04:00">Tue 12 May 2026
+                <a href="https://ELANGOMEENA.github.io/pynotes/py14-3736.html"><h3 class="article-title">Py14-3736</h3></a>
+<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
 </h6>
 
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">sum_n</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">1</span>
-    <span class="k">return</span> <span class="n">n</span> <span class="o">+</span> <span class="n">sum_n</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Repeater</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">text</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">sum_n</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>  <span class="c1"># Output: 15</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__mul__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">times</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span> <span class="o">*</span> <span class="n">times</span>
+
+<span class="n">r</span> <span class="o">=</span> <span class="n">Repeater</span><span class="p">(</span><span class="s2">&quot;AI &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span>  <span class="c1"># Output: AI AI AI </span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">15</span>
+<div class="highlight"><pre><span></span><code>AI AI AI
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">fibonacci</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">n</span>
-    <span class="k">return</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">fibonacci</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">2</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Calculator</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">=</span> <span class="n">value</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">fibonacci</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>  <span class="c1"># Output: 8</span>
-</code></pre></div>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__truediv__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">other</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">value</span> <span class="o">/</span> <span class="n">other</span><span class="o">.</span><span class="n">value</span>
 
-<div class="highlight"><pre><span></span><code><span class="mf">8</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">factorial_iterative</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1 …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-functions.html">Python Functions</a>
+<span class="n">c1</span> <span class="o">=</span> <span class="n">Calculator …</span></code></pre></div><p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-objects-and-classes.html">Python Objects and Classes</a>
 
 </p>
 
 
 
-                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py15-4624.html">Read More</a>
+                <a class="button radius secondary small right" href="https://ELANGOMEENA.github.io/pynotes/py14-3736.html">Read More</a>
                 <hr  class="gradient"/>
             </article>
 
             <!-- /#posts-list -->
 <div class="pagination-centered">
-<h6 class="subheader">Page 5 of 14</h6>
+<h6 class="subheader">Page 5 of 16</h6>
 
 <p>
             <a href="https://ELANGOMEENA.github.io/pynotes/author/your-name4.html">&laquo; Prev</a>
@@ -532,6 +527,7 @@ e
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datatypes.html">Python Datatypes</a></li>
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-datetime.html">Python datetime</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-exception-handling.html">Python Exception Handling</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-files.html">Python Files</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-flow-control.html">Python Flow Control</a></li>
