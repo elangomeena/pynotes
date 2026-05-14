@@ -48,82 +48,57 @@
         title="Permalink to Py13">Py13</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+<h6 class="subheader" title="2026-05-14T00:00:00-04:00">Thu 14 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">demo</span><span class="p">():</span>
-    <span class="n">a</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="n">b</span> <span class="o">=</span> <span class="mi">20</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">locals</span><span class="p">())</span>
+    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">display_values</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">args</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 
-<span class="n">demo</span><span class="p">()</span>
+<span class="n">display_values</span><span class="p">(</span><span class="s2">&quot;Python&quot;</span><span class="p">,</span> <span class="s2">&quot;AI&quot;</span><span class="p">,</span> <span class="s2">&quot;ML&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>{&#39;a&#39;: 10, &#39;b&#39;: 20}
+<div class="highlight"><pre><span></span><code>Python
+AI
+ML
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Global&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">display_profile</span><span class="p">(</span><span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">kwargs</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">key</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">value</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
 
-<span class="k">def</span><span class="w"> </span><span class="nf">outer</span><span class="p">():</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Enclosing&quot;</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">inner</span><span class="p">():</span>
-        <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Local&quot;</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-    <span class="n">inner</span><span class="p">()</span>
-
-<span class="n">outer</span><span class="p">()</span>
+<span class="n">display_profile</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&quot;Alice&quot;</span><span class="p">,</span> <span class="n">role</span><span class="o">=</span><span class="s2">&quot;Engineer&quot;</span><span class="p">,</span> <span class="n">location</span><span class="o">=</span><span class="s2">&quot;Toronto&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Local
+<div class="highlight"><pre><span></span><code>name: Alice
+role: Engineer
+location: Toronto
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">outer</span><span class="p">():</span>
-    <span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Hello&quot;</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">inner</span><span class="p">():</span>
-        <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
-    <span class="n">inner</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">process_data</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Positional:&quot;</span><span class="p">,</span> <span class="n">args</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Keyword:&quot;</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
 
-<span class="n">outer</span><span class="p">()</span>
+<span class="n">process_data</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">user</span><span class="o">=</span><span class="s2">&quot;CSP&quot;</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="s2">&quot;Active&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>Hello
+<div class="highlight"><pre><span></span><code>Positional: (10, 20)
+Keyword: {&#39;user&#39;: &#39;CSP&#39;, &#39;status&#39;: &#39;Active&#39;}
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">counter</span><span class="p">():</span>
-    <span class="n">value</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">def</span><span class="w"> </span><span class="nf">increment</span><span class="p">():</span>
-        <span class="k">nonlocal</span> <span class="n">value</span>
-        <span class="n">value</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">return</span> <span class="n">value</span>
-    <span class="k">return</span> <span class="n">increment</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">example</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">args</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">kwargs</span><span class="p">)</span>
 
-<span class="n">count</span> <span class="o">=</span> <span class="n">counter</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">())</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">count</span><span class="p">())</span>
+<span class="n">example</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">key</span><span class="o">=</span><span class="s2">&quot;value&quot;</span><span class="p">)</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">1</span>
-<span class="mf">2</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code><span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Global&quot;</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">test</span><span class="p">():</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="s2">&quot;Local&quot;</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Inside:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-
-<span class="n">test</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Outside:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span>
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>Inside: Local
-Outside: Global
+<div class="highlight"><pre><span></span><code><span class="mf">1</span><span class="w"> </span><span class="mf">2</span><span class="w"> </span><span class="p">(</span><span class="mf">3</span><span class="p">,</span><span class="w"> </span><span class="mf">4</span><span class="p">)</span><span class="w"> </span><span class="mf">10</span><span class="w"> </span><span class="err">{&#39;</span><span class="n">key</span><span class="err">&#39;</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="nb">val</span><span class="n">ue</span><span class="err">&#39;}</span>
 </code></pre></div>
 
 <hr>
-<p><strong>Score: 5</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
+<p><strong>Score: 0</strong></p>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/additional-topic.html">Additional Topic</a>
 
 </p>
 
@@ -145,6 +120,7 @@ Outside: Global
 		
         <h5 class="sidebar-title">Categories</h5>
         <ul class="side-nav">
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/additional-topic.html">Additional Topic</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>

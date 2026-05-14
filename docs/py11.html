@@ -48,62 +48,299 @@
         title="Permalink to Py11">Py11</a></h3>
     </header>
 
-<h6 class="subheader" title="2026-05-13T00:00:00-04:00">Wed 13 May 2026
+<h6 class="subheader" title="2026-05-14T00:00:00-04:00">Thu 14 May 2026
 </h6>
 
 
-    <div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">large_numbers</span><span class="p">():</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000000</span><span class="p">):</span>
-        <span class="k">yield</span> <span class="n">i</span>
-
-<span class="n">gen</span> <span class="o">=</span> <span class="n">large_numbers</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>
+    <div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="nb">list</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">0</span>
-<span class="mf">1</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Package</span><span class="w">                   </span><span class="nx">Version</span>
+<span class="o">-------------------------</span><span class="w"> </span><span class="o">-----------</span>
+<span class="nx">aiohappyeyeballs</span><span class="w">          </span><span class="m m-Double">2.6.1</span>
+<span class="nx">aiohttp</span><span class="w">                   </span><span class="m m-Double">3.13.5</span>
+<span class="nx">aiosignal</span><span class="w">                 </span><span class="m m-Double">1.4.0</span>
+<span class="nx">annotated</span><span class="o">-</span><span class="nx">doc</span><span class="w">             </span><span class="m m-Double">0.0.4</span>
+<span class="nx">annotated</span><span class="o">-</span><span class="nx">types</span><span class="w">           </span><span class="m m-Double">0.7.0</span>
+<span class="nx">anyio</span><span class="w">                     </span><span class="m m-Double">3.7.1</span>
+<span class="nx">argon2</span><span class="o">-</span><span class="nx">cffi</span><span class="w">               </span><span class="m m-Double">25.1.0</span>
+<span class="nx">argon2</span><span class="o">-</span><span class="nx">cffi</span><span class="o">-</span><span class="nx">bindings</span><span class="w">      </span><span class="m m-Double">25.1.0</span>
+<span class="nx">arrow</span><span class="w">                     </span><span class="m m-Double">1.4.0</span>
+<span class="nx">asttokens</span><span class="w">                 </span><span class="m m-Double">3.0.1</span>
+<span class="nx">async</span><span class="o">-</span><span class="nx">lru</span><span class="w">                 </span><span class="m m-Double">2.3.0</span>
+<span class="nx">attrs</span><span class="w">                     </span><span class="m m-Double">26.1.0</span>
+<span class="nx">babel</span><span class="w">                     </span><span class="m m-Double">2.18.0</span>
+<span class="nx">bcrypt</span><span class="w">                    </span><span class="m m-Double">4.0.1</span>
+<span class="nx">beautifulsoup4</span><span class="w">            </span><span class="m m-Double">4.14.3</span>
+<span class="nx">bleach</span><span class="w">                    </span><span class="m m-Double">6.3.0</span>
+<span class="nx">blinker</span><span class="w">                   </span><span class="m m-Double">1.9.0</span>
+<span class="nx">certifi</span><span class="w">                   </span><span class="m m-Double">2026.2.25</span>
+<span class="nx">cffi</span><span class="w">                      </span><span class="m m-Double">2.0.0</span>
+<span class="nx">charset</span><span class="o">-</span><span class="nx">normalizer</span><span class="w">        </span><span class="m m-Double">3.4.6</span>
+<span class="nx">click</span><span class="w">                     </span><span class="m m-Double">8.3.1</span>
+<span class="nx">colorama</span><span class="w">                  </span><span class="m m-Double">0.4.6</span>
+<span class="nx">comm</span><span class="w">                      </span><span class="m m-Double">0.2.3</span>
+<span class="nx">cryptography</span><span class="w">              </span><span class="m m-Double">46.0.6</span>
+<span class="nx">dataclasses</span><span class="o">-</span><span class="nx">json</span><span class="w">          </span><span class="m m-Double">0.6.7</span>
+<span class="nx">debugpy</span><span class="w">                   </span><span class="m m-Double">1.8.20</span>
+<span class="nx">decorator</span><span class="w">                 </span><span class="m m-Double">5.2.1</span>
+<span class="nx">defusedxml</span><span class="w">                </span><span class="m m-Double">0.7.1</span>
+<span class="nx">diskcache</span><span class="w">                 </span><span class="m m-Double">5.6.3</span>
+<span class="nx">distro</span><span class="w">                    </span><span class="m m-Double">1.9.0</span>
+<span class="nx">dnspython</span><span class="w">                 </span><span class="m m-Double">2.6.1</span>
+<span class="nx">docutils</span><span class="w">                  </span><span class="m m-Double">0.22.4</span>
+<span class="nx">email</span><span class="o">-</span><span class="nx">validator</span><span class="w">           </span><span class="m m-Double">2.3.0</span>
+<span class="nx">executing</span><span class="w">                 </span><span class="m m-Double">2.2.1</span>
+<span class="nx">faiss</span><span class="o">-</span><span class="nx">cpu</span><span class="w">                 </span><span class="m m-Double">1.13.2</span>
+<span class="nx">fastapi</span><span class="w">                   </span><span class="m m-Double">0.115.6</span>
+<span class="nx">fastapi</span><span class="o">-</span><span class="nx">cli</span><span class="w">               </span><span class="m m-Double">0.0.24</span>
+<span class="nx">fastjsonschema</span><span class="w">            </span><span class="m m-Double">2.21.2</span>
+<span class="nx">feedgenerator</span><span class="w">             </span><span class="m m-Double">2.2.1</span>
+<span class="nx">filelock</span><span class="w">                  </span><span class="m m-Double">3.28.0</span>
+<span class="nx">filetype</span><span class="w">                  </span><span class="m m-Double">1.2.0</span>
+<span class="nx">fqdn</span><span class="w">                      </span><span class="m m-Double">1.5.1</span>
+<span class="nx">frozenlist</span><span class="w">                </span><span class="m m-Double">1.8.0</span>
+<span class="nx">fsspec</span><span class="w">                    </span><span class="m m-Double">2026.3.0</span>
+<span class="nx">gitdb</span><span class="w">                     </span><span class="m m-Double">4.0.12</span>
+<span class="nx">GitPython</span><span class="w">                 </span><span class="m m-Double">3.1.43</span>
+<span class="nx">google</span><span class="o">-</span><span class="nx">auth</span><span class="w">               </span><span class="m m-Double">2.49.1</span>
+<span class="nx">google</span><span class="o">-</span><span class="nx">genai</span><span class="w">              </span><span class="m m-Double">1.70.0</span>
+<span class="nx">greenlet</span><span class="w">                  </span><span class="m m-Double">3.4.0</span>
+<span class="nx">h11</span><span class="w">                       </span><span class="m m-Double">0.16.0</span>
+<span class="nx">hf</span><span class="o">-</span><span class="nx">xet</span><span class="w">                    </span><span class="m m-Double">1.4.3</span>
+<span class="nx">httpcore</span><span class="w">                  </span><span class="m m-Double">1.0.9</span>
+<span class="nx">httptools</span><span class="w">                 </span><span class="m m-Double">0.7.1</span>
+<span class="nx">httpx</span><span class="w">                     </span><span class="m m-Double">0.27.2</span>
+<span class="nx">httpx</span><span class="o">-</span><span class="nx">sse</span><span class="w">                 </span><span class="m m-Double">0.4.3</span>
+<span class="nx">huggingface_hub</span><span class="w">           </span><span class="m m-Double">1.11.0</span>
+<span class="nx">hypothesis</span><span class="w">                </span><span class="m m-Double">6.151.10</span>
+<span class="nx">idna</span><span class="w">                      </span><span class="m m-Double">3.11</span>
+<span class="nx">iniconfig</span><span class="w">                 </span><span class="m m-Double">2.3.0</span>
+<span class="nx">ipykernel</span><span class="w">                 </span><span class="m m-Double">7.2.0</span>
+<span class="nx">ipython</span><span class="w">                   </span><span class="m m-Double">9.10.1</span>
+<span class="nx">ipython_pygments_lexers</span><span class="w">   </span><span class="m m-Double">1.1.1</span>
+<span class="nx">isoduration</span><span class="w">               </span><span class="m m-Double">20.11.0</span>
+<span class="nx">jedi</span><span class="w">                      </span><span class="m m-Double">0.19.2</span>
+<span class="nx">Jinja2</span><span class="w">                    </span><span class="m m-Double">3.1.4</span>
+<span class="nx">jiter</span><span class="w">                     </span><span class="m m-Double">0.13.0</span>
+<span class="nx">joblib</span><span class="w">                    </span><span class="m m-Double">1.5.3</span>
+<span class="nx">json5</span><span class="w">                     </span><span class="m m-Double">0.14.0</span>
+<span class="nx">jsonpatch</span><span class="w">                 </span><span class="m m-Double">1.33</span>
+<span class="nx">jsonpointer</span><span class="w">               </span><span class="m m-Double">3.1.1</span>
+<span class="nx">jsonschema</span><span class="w">                </span><span class="m m-Double">4.26.0</span>
+<span class="nx">jsonschema</span><span class="o">-</span><span class="nx">specifications</span><span class="w"> </span><span class="m m-Double">2025.9.1</span>
+<span class="nx">jupyter_client</span><span class="w">            </span><span class="m m-Double">8.8.0</span>
+<span class="nx">jupyter_core</span><span class="w">              </span><span class="m m-Double">5.9.1</span>
+<span class="nx">jupyter</span><span class="o">-</span><span class="nx">events</span><span class="w">            </span><span class="m m-Double">0.12.0</span>
+<span class="nx">jupyter</span><span class="o">-</span><span class="nx">lsp</span><span class="w">               </span><span class="m m-Double">2.3.1</span>
+<span class="nx">jupyter_server</span><span class="w">            </span><span class="m m-Double">2.17.0</span>
+<span class="nx">jupyter_server_terminals</span><span class="w">  </span><span class="m m-Double">0.5.4</span>
+<span class="nx">jupyterlab</span><span class="w">                </span><span class="m m-Double">4.5.6</span>
+<span class="nx">jupyterlab_pygments</span><span class="w">       </span><span class="m m-Double">0.3.0</span>
+<span class="nx">jupyterlab_server</span><span class="w">         </span><span class="m m-Double">2.28.0</span>
+<span class="nx">langchain</span><span class="w">                 </span><span class="m m-Double">1.2.15</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">classic</span><span class="w">         </span><span class="m m-Double">1.0.4</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">community</span><span class="w">       </span><span class="m m-Double">0.4.1</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">core</span><span class="w">            </span><span class="m m-Double">1.3.0</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">google</span><span class="o">-</span><span class="nx">genai</span><span class="w">    </span><span class="m m-Double">4.2.1</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">ollama</span><span class="w">          </span><span class="m m-Double">1.1.0</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">openai</span><span class="w">          </span><span class="m m-Double">1.1.14</span>
+<span class="nx">langchain</span><span class="o">-</span><span class="nx">text</span><span class="o">-</span><span class="nx">splitters</span><span class="w">  </span><span class="m m-Double">1.1.2</span>
+<span class="nx">langgraph</span><span class="w">                 </span><span class="m m-Double">1.1.6</span>
+<span class="nx">langgraph</span><span class="o">-</span><span class="nx">checkpoint</span><span class="w">      </span><span class="m m-Double">4.0.1</span>
+<span class="nx">langgraph</span><span class="o">-</span><span class="nx">prebuilt</span><span class="w">        </span><span class="m m-Double">1.0.9</span>
+<span class="nx">langgraph</span><span class="o">-</span><span class="nx">sdk</span><span class="w">             </span><span class="m m-Double">0.3.12</span>
+<span class="nx">langsmith</span><span class="w">                 </span><span class="m m-Double">0.3.45</span>
+<span class="nx">lark</span><span class="w">                      </span><span class="m m-Double">1.3.1</span>
+<span class="nx">llama_cpp_python</span><span class="w">          </span><span class="m m-Double">0.3.20</span>
+<span class="nx">Markdown</span><span class="w">                  </span><span class="m m-Double">3.7</span>
+<span class="nx">markdown</span><span class="o">-</span><span class="nx">it</span><span class="o">-</span><span class="nx">py</span><span class="w">            </span><span class="m m-Double">4.0.0</span>
+<span class="nx">MarkupSafe</span><span class="w">                </span><span class="m m-Double">3.0.3</span>
+<span class="nx">marshmallow</span><span class="w">               </span><span class="m m-Double">3.26.2</span>
+<span class="nx">matplotlib</span><span class="o">-</span><span class="nx">inline</span><span class="w">         </span><span class="m m-Double">0.2.1</span>
+<span class="nx">mcp</span><span class="w">                       </span><span class="m m-Double">1.6.0</span>
+<span class="nx">mdurl</span><span class="w">                     </span><span class="m m-Double">0.1.2</span>
+<span class="nx">mistune</span><span class="w">                   </span><span class="m m-Double">3.2.0</span>
+<span class="nx">mpmath</span><span class="w">                    </span><span class="m m-Double">1.3.0</span>
+<span class="nx">multidict</span><span class="w">                 </span><span class="m m-Double">6.7.1</span>
+<span class="nx">mypackage</span><span class="w">                 </span><span class="m m-Double">1.0</span>
+<span class="nx">mypy_extensions</span><span class="w">           </span><span class="m m-Double">1.1.0</span>
+<span class="nx">nbclient</span><span class="w">                  </span><span class="m m-Double">0.10.4</span>
+<span class="nx">nbconvert</span><span class="w">                 </span><span class="m m-Double">7.16.4</span>
+<span class="nx">nbformat</span><span class="w">                  </span><span class="m m-Double">5.10.4</span>
+<span class="nx">nest</span><span class="o">-</span><span class="nx">asyncio</span><span class="w">              </span><span class="m m-Double">1.6.0</span>
+<span class="nx">networkx</span><span class="w">                  </span><span class="m m-Double">3.6.1</span>
+<span class="nx">notebook_shim</span><span class="w">             </span><span class="m m-Double">0.2.4</span>
+<span class="nx">numpy</span><span class="w">                     </span><span class="m m-Double">2.4.4</span>
+<span class="nx">ollama</span><span class="w">                    </span><span class="m m-Double">0.6.1</span>
+<span class="nx">openai</span><span class="w">                    </span><span class="m m-Double">2.32.0</span>
+<span class="nx">ordered</span><span class="o">-</span><span class="nx">set</span><span class="w">               </span><span class="m m-Double">4.1.0</span>
+<span class="nx">orjson</span><span class="w">                    </span><span class="m m-Double">3.11.8</span>
+<span class="nx">ormsgpack</span><span class="w">                 </span><span class="m m-Double">1.12.2</span>
+<span class="nx">overrides</span><span class="w">                 </span><span class="m m-Double">7.7.0</span>
+<span class="nx">packaging</span><span class="w">                 </span><span class="m m-Double">24.2</span>
+<span class="nx">pandas</span><span class="w">                    </span><span class="m m-Double">3.0.2</span>
+<span class="nx">pandocfilters</span><span class="w">             </span><span class="m m-Double">1.5.1</span>
+<span class="nx">parso</span><span class="w">                     </span><span class="m m-Double">0.8.6</span>
+<span class="nx">pelican</span><span class="w">                   </span><span class="m m-Double">4.10.1</span>
+<span class="nx">pip</span><span class="w">                       </span><span class="m m-Double">26.0.1</span>
+<span class="nx">platformdirs</span><span class="w">              </span><span class="m m-Double">4.9.4</span>
+<span class="nx">pluggy</span><span class="w">                    </span><span class="m m-Double">1.6.0</span>
+<span class="nx">prometheus_client</span><span class="w">         </span><span class="m m-Double">0.24.1</span>
+<span class="nx">prompt_toolkit</span><span class="w">            </span><span class="m m-Double">3.0.52</span>
+<span class="nx">propcache</span><span class="w">                 </span><span class="m m-Double">0.4.1</span>
+<span class="nx">psutil</span><span class="w">                    </span><span class="m m-Double">7.2.2</span>
+<span class="nx">pure_eval</span><span class="w">                 </span><span class="m m-Double">0.2.3</span>
+<span class="nx">pyasn1</span><span class="w">                    </span><span class="m m-Double">0.6.3</span>
+<span class="nx">pyasn1_modules</span><span class="w">            </span><span class="m m-Double">0.4.2</span>
+<span class="nx">pycparser</span><span class="w">                 </span><span class="m m-Double">3.0</span>
+<span class="nx">pydantic</span><span class="w">                  </span><span class="m m-Double">2.7.1</span>
+<span class="nx">pydantic_core</span><span class="w">             </span><span class="m m-Double">2.18.2</span>
+<span class="nx">pydantic</span><span class="o">-</span><span class="nx">settings</span><span class="w">         </span><span class="m m-Double">2.13.1</span>
+<span class="nx">Pygments</span><span class="w">                  </span><span class="m m-Double">2.20.0</span>
+<span class="nx">pymongo</span><span class="w">                   </span><span class="m m-Double">4.6.1</span>
+<span class="nx">pytest</span><span class="w">                    </span><span class="m m-Double">9.0.2</span>
+<span class="nx">python</span><span class="o">-</span><span class="nx">dateutil</span><span class="w">           </span><span class="m m-Double">2.9.0</span><span class="p">.</span><span class="nx">post0</span>
+<span class="nx">python</span><span class="o">-</span><span class="nx">dotenv</span><span class="w">             </span><span class="m m-Double">1.0.1</span>
+<span class="nx">python</span><span class="o">-</span><span class="nx">json</span><span class="o">-</span><span class="nx">logger</span><span class="w">        </span><span class="m m-Double">4.1.0</span>
+<span class="nx">python</span><span class="o">-</span><span class="nx">multipart</span><span class="w">          </span><span class="m m-Double">0.0.9</span>
+<span class="nx">pywinpty</span><span class="w">                  </span><span class="m m-Double">3.0.3</span>
+<span class="nx">PyYAML</span><span class="w">                    </span><span class="m m-Double">6.0.3</span>
+<span class="nx">pyzmq</span><span class="w">                     </span><span class="m m-Double">27.1.0</span>
+<span class="nx">referencing</span><span class="w">               </span><span class="m m-Double">0.37.0</span>
+<span class="nx">regex</span><span class="w">                     </span><span class="m m-Double">2026.3.32</span>
+<span class="nx">requests</span><span class="w">                  </span><span class="m m-Double">2.34.1</span>
+<span class="nx">requests</span><span class="o">-</span><span class="nx">toolbelt</span><span class="w">         </span><span class="m m-Double">1.0.0</span>
+<span class="nx">rfc3339</span><span class="o">-</span><span class="nx">validator</span><span class="w">         </span><span class="m m-Double">0.1.4</span>
+<span class="nx">rfc3986</span><span class="o">-</span><span class="nx">validator</span><span class="w">         </span><span class="m m-Double">0.1.1</span>
+<span class="nx">rfc3987</span><span class="o">-</span><span class="nx">syntax</span><span class="w">            </span><span class="m m-Double">1.1.0</span>
+<span class="nx">rich</span><span class="w">                      </span><span class="m m-Double">14.3.3</span>
+<span class="nx">rich</span><span class="o">-</span><span class="nx">toolkit</span><span class="w">              </span><span class="m m-Double">0.19.7</span>
+<span class="nx">rpds</span><span class="o">-</span><span class="nx">py</span><span class="w">                   </span><span class="m m-Double">0.30.0</span>
+<span class="nx">safetensors</span><span class="w">               </span><span class="m m-Double">0.7.0</span>
+<span class="nx">scikit</span><span class="o">-</span><span class="nx">learn</span><span class="w">              </span><span class="m m-Double">1.8.0</span>
+<span class="nx">scipy</span><span class="w">                     </span><span class="m m-Double">1.17.1</span>
+<span class="nx">Send2Trash</span><span class="w">                </span><span class="m m-Double">2.1.0</span>
+<span class="nx">sentence</span><span class="o">-</span><span class="nx">transformers</span><span class="w">     </span><span class="m m-Double">5.4.1</span>
+<span class="nx">setuptools</span><span class="w">                </span><span class="m m-Double">80.10.2</span>
+<span class="nx">shellingham</span><span class="w">               </span><span class="m m-Double">1.5.4</span>
+<span class="nx">six</span><span class="w">                       </span><span class="m m-Double">1.17.0</span>
+<span class="nx">smmap</span><span class="w">                     </span><span class="m m-Double">5.0.3</span>
+<span class="nx">sniffio</span><span class="w">                   </span><span class="m m-Double">1.3.1</span>
+<span class="nx">sortedcontainers</span><span class="w">          </span><span class="m m-Double">2.4.0</span>
+<span class="nx">soupsieve</span><span class="w">                 </span><span class="m m-Double">2.8.3</span>
+<span class="nx">SQLAlchemy</span><span class="w">                </span><span class="m m-Double">2.0.49</span>
+<span class="nx">sse</span><span class="o">-</span><span class="nx">starlette</span><span class="w">             </span><span class="m m-Double">3.3.4</span>
+<span class="nx">stack</span><span class="o">-</span><span class="nx">data</span><span class="w">                </span><span class="m m-Double">0.6.3</span>
+<span class="nx">starlette</span><span class="w">                 </span><span class="m m-Double">0.41.3</span>
+<span class="nx">sympy</span><span class="w">                     </span><span class="m m-Double">1.14.0</span>
+<span class="nx">tenacity</span><span class="w">                  </span><span class="m m-Double">9.1.4</span>
+<span class="nx">terminado</span><span class="w">                 </span><span class="m m-Double">0.18.1</span>
+<span class="nx">threadpoolctl</span><span class="w">             </span><span class="m m-Double">3.6.0</span>
+<span class="nx">tiktoken</span><span class="w">                  </span><span class="m m-Double">0.12.0</span>
+<span class="nx">tinycss2</span><span class="w">                  </span><span class="m m-Double">1.5.1</span>
+<span class="nx">tokenizers</span><span class="w">                </span><span class="m m-Double">0.22.2</span>
+<span class="nx">torch</span><span class="w">                     </span><span class="m m-Double">2.11.0</span>
+<span class="nx">tornado</span><span class="w">                   </span><span class="m m-Double">6.5.5</span>
+<span class="nx">tqdm</span><span class="w">                      </span><span class="m m-Double">4.67.3</span>
+<span class="nx">traitlets</span><span class="w">                 </span><span class="m m-Double">5.14.3</span>
+<span class="nx">transformers</span><span class="w">              </span><span class="m m-Double">5.5.4</span>
+<span class="nx">typer</span><span class="w">                     </span><span class="m m-Double">0.24.1</span>
+<span class="nx">typing_extensions</span><span class="w">         </span><span class="m m-Double">4.15.0</span>
+<span class="nx">typing</span><span class="o">-</span><span class="nx">inspect</span><span class="w">            </span><span class="m m-Double">0.9.0</span>
+<span class="nx">typing</span><span class="o">-</span><span class="nx">inspection</span><span class="w">         </span><span class="m m-Double">0.4.2</span>
+<span class="nx">tzdata</span><span class="w">                    </span><span class="m m-Double">2025.3</span>
+<span class="nx">ujson</span><span class="w">                     </span><span class="m m-Double">5.12.0</span>
+<span class="nx">Unidecode</span><span class="w">                 </span><span class="m m-Double">1.4.0</span>
+<span class="nx">uri</span><span class="o">-</span><span class="nx">template</span><span class="w">              </span><span class="m m-Double">1.3.0</span>
+<span class="nx">urllib3</span><span class="w">                   </span><span class="m m-Double">2.6.3</span>
+<span class="nx">uuid_utils</span><span class="w">                </span><span class="m m-Double">0.14.1</span>
+<span class="nx">uvicorn</span><span class="w">                   </span><span class="m m-Double">0.34.0</span>
+<span class="nx">watchfiles</span><span class="w">                </span><span class="m m-Double">1.1.1</span>
+<span class="nx">wcwidth</span><span class="w">                   </span><span class="m m-Double">0.6.0</span>
+<span class="nx">webcolors</span><span class="w">                 </span><span class="m m-Double">25.10.0</span>
+<span class="nx">webencodings</span><span class="w">              </span><span class="m m-Double">0.5.1</span>
+<span class="nx">websocket</span><span class="o">-</span><span class="nx">client</span><span class="w">          </span><span class="m m-Double">1.9.0</span>
+<span class="nx">websockets</span><span class="w">                </span><span class="m m-Double">16.0</span>
+<span class="nx">wheel</span><span class="w">                     </span><span class="m m-Double">0.46.3</span>
+<span class="nx">xxhash</span><span class="w">                    </span><span class="m m-Double">3.6.0</span>
+<span class="nx">yarl</span><span class="w">                      </span><span class="m m-Double">1.23.0</span>
+<span class="nx">zstandard</span><span class="w">                 </span><span class="m m-Double">0.23.0</span>
+<span class="nx">Note</span><span class="p">:</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">need</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">restart</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">kernel</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">use</span><span class="w"> </span><span class="nx">updated</span><span class="w"> </span><span class="nx">packages</span><span class="p">.</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="n">squares</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span> <span class="o">**</span> <span class="mi">2</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">squares</span><span class="p">))</span>  <span class="c1"># [0, 1, 4, 9, 16]</span>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">show</span> <span class="n">requests</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>[0, 1, 4, 9, 16]
+<div class="highlight"><pre><span></span><code><span class="n">Name</span><span class="p">:</span><span class="w"> </span><span class="n">requests</span>
+<span class="n">Version</span><span class="p">:</span><span class="w"> </span><span class="mf">2.34</span><span class="o">.</span><span class="mi">1</span>
+<span class="n">Summary</span><span class="p">:</span><span class="w"> </span><span class="n">Python</span><span class="w"> </span><span class="n">HTTP</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">Humans</span><span class="o">.</span>
+<span class="n">Home</span><span class="o">-</span><span class="n">page</span><span class="p">:</span><span class="w"> </span>
+<span class="n">Author</span><span class="p">:</span><span class="w"> </span>
+<span class="n">Author</span><span class="o">-</span><span class="n">email</span><span class="p">:</span><span class="w"> </span><span class="n">Kenneth</span><span class="w"> </span><span class="n">Reitz</span><span class="w"> </span><span class="o">&lt;</span><span class="n">me</span><span class="err">@</span><span class="n">kennethreitz</span><span class="o">.</span><span class="n">org</span><span class="o">&gt;</span>
+<span class="n">License</span><span class="p">:</span><span class="w"> </span><span class="n">Apache</span><span class="o">-</span><span class="mf">2.0</span>
+<span class="n">Location</span><span class="p">:</span><span class="w"> </span><span class="n">C</span><span class="p">:</span>\<span class="n">Users</span>\<span class="n">Ganesh</span>\<span class="n">miniconda3</span>\<span class="n">envs</span>\<span class="n">py311</span>\<span class="n">Lib</span>\<span class="n">site</span><span class="o">-</span><span class="n">packages</span>
+<span class="n">Requires</span><span class="p">:</span><span class="w"> </span><span class="n">certifi</span><span class="p">,</span><span class="w"> </span><span class="n">charset_normalizer</span><span class="p">,</span><span class="w"> </span><span class="n">idna</span><span class="p">,</span><span class="w"> </span><span class="n">urllib3</span>
+<span class="n">Required</span><span class="o">-</span><span class="n">by</span><span class="p">:</span><span class="w"> </span><span class="n">google</span><span class="o">-</span><span class="n">genai</span><span class="p">,</span><span class="w"> </span><span class="n">jupyterlab_server</span><span class="p">,</span><span class="w"> </span><span class="n">langchain</span><span class="o">-</span><span class="n">classic</span><span class="p">,</span><span class="w"> </span><span class="n">langchain</span><span class="o">-</span><span class="n">community</span><span class="p">,</span><span class="w"> </span><span class="n">langsmith</span><span class="p">,</span><span class="w"> </span><span class="n">requests</span><span class="o">-</span><span class="n">toolbelt</span><span class="p">,</span><span class="w"> </span><span class="n">tiktoken</span>
+<span class="n">Note</span><span class="p">:</span><span class="w"> </span><span class="n">you</span><span class="w"> </span><span class="n">may</span><span class="w"> </span><span class="n">need</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">restart</span><span class="w"> </span><span class="n">the</span><span class="w"> </span><span class="n">kernel</span><span class="w"> </span><span class="n">to</span><span class="w"> </span><span class="n">use</span><span class="w"> </span><span class="n">updated</span><span class="w"> </span><span class="n">packages</span><span class="o">.</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">alpha_generator</span><span class="p">():</span>
-    <span class="k">yield</span> <span class="s2">&quot;A&quot;</span>
-    <span class="k">yield</span> <span class="s2">&quot;B&quot;</span>
-    <span class="k">yield</span> <span class="s2">&quot;C&quot;</span>
-
-<span class="n">gen</span> <span class="o">=</span> <span class="n">alpha_generator</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">gen</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">numpy</span><span class="o">==</span><span class="mf">1.24.0</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code>A
-B
+<div class="highlight"><pre><span></span><code><span class="c">Collecting numpy==1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0</span>
+<span class="c">  Downloading numpy</span><span class="nb">-</span><span class="c">1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0</span><span class="nb">-</span><span class="c">cp311</span><span class="nb">-</span><span class="c">cp311</span><span class="nb">-</span><span class="c">win_amd64</span><span class="nt">.</span><span class="c">whl</span><span class="nt">.</span><span class="c">metadata (5</span><span class="nt">.</span><span class="c">6 kB)</span>
+<span class="c">Downloading numpy</span><span class="nb">-</span><span class="c">1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0</span><span class="nb">-</span><span class="c">cp311</span><span class="nb">-</span><span class="c">cp311</span><span class="nb">-</span><span class="c">win_amd64</span><span class="nt">.</span><span class="c">whl (14</span><span class="nt">.</span><span class="c">8 MB)</span>
+<span class="c">   </span><span class="nb">----------------------------------------</span><span class="c"> 0</span><span class="nt">.</span><span class="c">0/14</span><span class="nt">.</span><span class="c">8 MB ? eta </span><span class="nb">-</span><span class="c">:</span><span class="nb">--</span><span class="c">:</span><span class="nb">--</span>
+<span class="c">   </span><span class="nb">--</span><span class="c"> </span><span class="nb">-------------------------------------</span><span class="c"> 0</span><span class="nt">.</span><span class="c">8/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">6 MB/s eta 0:00:03</span>
+<span class="c">   </span><span class="nb">----</span><span class="c"> </span><span class="nb">-----------------------------------</span><span class="c"> 1</span><span class="nt">.</span><span class="c">8/14</span><span class="nt">.</span><span class="c">8 MB 4</span><span class="nt">.</span><span class="c">8 MB/s eta 0:00:03</span>
+<span class="c">   </span><span class="nb">--------</span><span class="c"> </span><span class="nb">-------------------------------</span><span class="c"> 3</span><span class="nt">.</span><span class="c">1/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">4 MB/s eta 0:00:03</span>
+<span class="c">   </span><span class="nb">-----------</span><span class="c"> </span><span class="nb">----------------------------</span><span class="c"> 4</span><span class="nt">.</span><span class="c">2/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">6 MB/s eta 0:00:02</span>
+<span class="c">   </span><span class="nb">------------</span><span class="c"> </span><span class="nb">---------------------------</span><span class="c"> 4</span><span class="nt">.</span><span class="c">7/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">0 MB/s eta 0:00:03</span>
+<span class="c">   </span><span class="nb">----------------</span><span class="c"> </span><span class="nb">-----------------------</span><span class="c"> 6</span><span class="nt">.</span><span class="c">3/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">2 MB/s eta 0:00:02</span>
+<span class="c">   </span><span class="nb">--------------------</span><span class="c"> </span><span class="nb">-------------------</span><span class="c"> 7</span><span class="nt">.</span><span class="c">6/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">4 MB/s eta 0:00:02</span>
+<span class="c">   </span><span class="nb">------------------------</span><span class="c"> </span><span class="nb">---------------</span><span class="c"> 8</span><span class="nt">.</span><span class="c">9/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">5 MB/s eta 0:00:02</span>
+<span class="c">   </span><span class="nb">----------------------------</span><span class="c"> </span><span class="nb">-----------</span><span class="c"> 10</span><span class="nt">.</span><span class="c">5/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">7 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">-------------------------------</span><span class="c"> </span><span class="nb">--------</span><span class="c"> 11</span><span class="nt">.</span><span class="c">5/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">7 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">-------------------------------</span><span class="c"> </span><span class="nb">--------</span><span class="c"> 11</span><span class="nt">.</span><span class="c">5/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">7 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">-------------------------------</span><span class="c"> </span><span class="nb">--------</span><span class="c"> 11</span><span class="nt">.</span><span class="c">5/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">7 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">-------------------------------</span><span class="c"> </span><span class="nb">--------</span><span class="c"> 11</span><span class="nt">.</span><span class="c">5/14</span><span class="nt">.</span><span class="c">8 MB 5</span><span class="nt">.</span><span class="c">7 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">---------------------------------</span><span class="c"> </span><span class="nb">------</span><span class="c"> 12</span><span class="nt">.</span><span class="c">3/14</span><span class="nt">.</span><span class="c">8 MB 4</span><span class="nt">.</span><span class="c">2 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">---------------------------------</span><span class="c"> </span><span class="nb">------</span><span class="c"> 12</span><span class="nt">.</span><span class="c">6/14</span><span class="nt">.</span><span class="c">8 MB 4</span><span class="nt">.</span><span class="c">2 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">---------------------------------</span><span class="c"> </span><span class="nb">------</span><span class="c"> 12</span><span class="nt">.</span><span class="c">6/14</span><span class="nt">.</span><span class="c">8 MB 4</span><span class="nt">.</span><span class="c">2 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">---------------------------------</span><span class="c"> </span><span class="nb">------</span><span class="c"> 12</span><span class="nt">.</span><span class="c">6/14</span><span class="nt">.</span><span class="c">8 MB 4</span><span class="nt">.</span><span class="c">2 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">------------------------------------</span><span class="c"> </span><span class="nb">---</span><span class="c"> 13</span><span class="nt">.</span><span class="c">4/14</span><span class="nt">.</span><span class="c">8 MB 3</span><span class="nt">.</span><span class="c">5 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">---------------------------------------</span><span class="c">  14</span><span class="nt">.</span><span class="c">7/14</span><span class="nt">.</span><span class="c">8 MB 3</span><span class="nt">.</span><span class="c">7 MB/s eta 0:00:01</span>
+<span class="c">   </span><span class="nb">----------------------------------------</span><span class="c"> 14</span><span class="nt">.</span><span class="c">8/14</span><span class="nt">.</span><span class="c">8 MB 3</span><span class="nt">.</span><span class="c">6 MB/s  0:00:04</span>
+<span class="c">Installing collected packages: numpy</span>
+<span class="c">  Attempting uninstall: numpy</span>
+<span class="c">    Found existing installation: numpy 2</span><span class="nt">.</span><span class="c">4</span><span class="nt">.</span><span class="c">4</span>
+<span class="c">    Uninstalling numpy</span><span class="nb">-</span><span class="c">2</span><span class="nt">.</span><span class="c">4</span><span class="nt">.</span><span class="c">4:</span>
+<span class="c">      Successfully uninstalled numpy</span><span class="nb">-</span><span class="c">2</span><span class="nt">.</span><span class="c">4</span><span class="nt">.</span><span class="c">4</span>
+<span class="c">Successfully installed numpy</span><span class="nb">-</span><span class="c">1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0</span>
+<span class="c">Note: you may need to restart the kernel to use updated packages</span><span class="nt">.</span>
+
+
+<span class="c">ERROR: pip&#39;s dependency resolver does not currently take into account all the packages that are installed</span><span class="nt">.</span><span class="c"> This behaviour is the source of the following dependency conflicts</span><span class="nt">.</span>
+<span class="c">faiss</span><span class="nb">-</span><span class="c">cpu 1</span><span class="nt">.</span><span class="c">13</span><span class="nt">.</span><span class="c">2 requires numpy</span><span class="nv">&lt;</span><span class="c">3</span><span class="nt">.</span><span class="c">0</span><span class="nt">,</span><span class="nv">&gt;</span><span class="c">=1</span><span class="nt">.</span><span class="c">25</span><span class="nt">.</span><span class="c">0</span><span class="nt">,</span><span class="c"> but you have numpy 1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0 which is incompatible</span><span class="nt">.</span>
+<span class="c">langchain</span><span class="nb">-</span><span class="c">community 0</span><span class="nt">.</span><span class="c">4</span><span class="nt">.</span><span class="c">1 requires numpy</span><span class="nv">&gt;</span><span class="c">=1</span><span class="nt">.</span><span class="c">26</span><span class="nt">.</span><span class="c">2; python_version </span><span class="nv">&lt;</span><span class="c"> &quot;3</span><span class="nt">.</span><span class="c">13&quot;</span><span class="nt">,</span><span class="c"> but you have numpy 1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0 which is incompatible</span><span class="nt">.</span>
+<span class="c">pandas 3</span><span class="nt">.</span><span class="c">0</span><span class="nt">.</span><span class="c">2 requires numpy</span><span class="nv">&gt;</span><span class="c">=1</span><span class="nt">.</span><span class="c">26</span><span class="nt">.</span><span class="c">0; python_version </span><span class="nv">&lt;</span><span class="c"> &quot;3</span><span class="nt">.</span><span class="c">14&quot;</span><span class="nt">,</span><span class="c"> but you have numpy 1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0 which is incompatible</span><span class="nt">.</span>
+<span class="c">scikit</span><span class="nb">-</span><span class="c">learn 1</span><span class="nt">.</span><span class="c">8</span><span class="nt">.</span><span class="c">0 requires numpy</span><span class="nv">&gt;</span><span class="c">=1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">1</span><span class="nt">,</span><span class="c"> but you have numpy 1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0 which is incompatible</span><span class="nt">.</span>
+<span class="c">scipy 1</span><span class="nt">.</span><span class="c">17</span><span class="nt">.</span><span class="c">1 requires numpy</span><span class="nv">&lt;</span><span class="c">2</span><span class="nt">.</span><span class="c">7</span><span class="nt">,</span><span class="nv">&gt;</span><span class="c">=1</span><span class="nt">.</span><span class="c">26</span><span class="nt">.</span><span class="c">4</span><span class="nt">,</span><span class="c"> but you have numpy 1</span><span class="nt">.</span><span class="c">24</span><span class="nt">.</span><span class="c">0 which is incompatible</span><span class="nt">.</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">infinite_counter</span><span class="p">():</span>
-    <span class="n">num</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-        <span class="k">yield</span> <span class="n">num</span>
-        <span class="n">num</span> <span class="o">+=</span> <span class="mi">1</span>
-
-<span class="n">counter</span> <span class="o">=</span> <span class="n">infinite_counter</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">counter</span><span class="p">))</span>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">r</span> <span class="n">requirements</span><span class="o">.</span><span class="n">txt</span>
 </code></pre></div>
 
-<div class="highlight"><pre><span></span><code><span class="mf">1</span>
-<span class="mf">2</span>
+<div class="highlight"><pre><span></span><code><span class="nx">Note</span><span class="p">:</span><span class="w"> </span><span class="nx">you</span><span class="w"> </span><span class="nx">may</span><span class="w"> </span><span class="nx">need</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">restart</span><span class="w"> </span><span class="nx">the</span><span class="w"> </span><span class="nx">kernel</span><span class="w"> </span><span class="nx">to</span><span class="w"> </span><span class="nx">use</span><span class="w"> </span><span class="nx">updated</span><span class="w"> </span><span class="nx">packages</span><span class="p">.</span>
+
+
+<span class="nx">ERROR</span><span class="p">:</span><span class="w"> </span><span class="nx">Could</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="nx">open</span><span class="w"> </span><span class="nx">requirements</span><span class="w"> </span><span class="nx">file</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="nx">Errno</span><span class="w"> </span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="nx">No</span><span class="w"> </span><span class="nx">such</span><span class="w"> </span><span class="nx">file</span><span class="w"> </span><span class="k">or</span><span class="w"> </span><span class="nx">directory</span><span class="p">:</span><span class="w"> </span><span class="err">&#39;</span><span class="nx">requirements</span><span class="p">.</span><span class="nx">txt</span><span class="err">&#39;</span>
 </code></pre></div>
 
 <hr>
 <p><strong>Score: 0</strong></p>
-<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a>
+<p class="subheader">Category: <a href="https://ELANGOMEENA.github.io/pynotes/category/additional-topic.html">Additional Topic</a>
 
 </p>
 
@@ -125,6 +362,7 @@ B
 		
         <h5 class="sidebar-title">Categories</h5>
         <ul class="side-nav">
+            <li><a href="https://ELANGOMEENA.github.io/pynotes/category/additional-topic.html">Additional Topic</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/basics.html">basics</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/pandas-work.html">pandas-work</a></li>
             <li><a href="https://ELANGOMEENA.github.io/pynotes/category/python-advanced-topics.html">Python Advanced Topics</a></li>
